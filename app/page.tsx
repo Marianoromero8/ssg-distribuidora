@@ -1,7 +1,7 @@
-import NavBar from "./components/navBar/NavBar";
-import Home from "./components/home/Home"
-import AboutUs from "./components/aboutUs/AboutUs";
-import Brands from "./components/brands/Brands";
+// import NavBar from "./components/navBar/NavBar";
+// import Home from "./components/home/Home"
+// import AboutUs from "./components/aboutUs/AboutUs";
+// import Brands from "./components/brands/Brands";
 import Image from "next/image";
 import Link from "next/link";
 
