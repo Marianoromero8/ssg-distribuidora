@@ -1,8 +1,8 @@
-'use client'
-import Products from "./Products";
+// 'use client'
+// import Products from "./Products";
 
-export default function Page() {
-    return (
-        <Products />
-    )
-}
+// export default function Page() {
+//     return (
+//         <Products />
+//     )
+// }
