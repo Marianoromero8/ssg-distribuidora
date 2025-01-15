@@ -1,9 +1,10 @@
 'use client'
-import React, { useEffect, useState, ChangeEvent } from "react"
+import React, { useState, ChangeEvent } from "react"
+import { Product } from "./Products";
 
 interface FilterBrandsProps {
-    products: any[];
-    onFilterChange: (filtered: any[]) => void;
+    products: Product[];
+    onFilterChange: (filtered: Product[]) => void;
 }
 
 export function FilterBrands({ products, onFilterChange }: FilterBrandsProps) {

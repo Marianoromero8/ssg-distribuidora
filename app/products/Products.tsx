@@ -4,10 +4,18 @@ import { FilterBrands } from "./filtersBrands"
 import Image from "next/image";
 import Link from "next/link";
 
+export interface Product {
+    id: string | number;
+    image: string;
+    productName: string;
+    presentation: string;
+    brand: string;
+}
+
 export default function Products() {
 
-    const [products, setProducts] = useState<any[]>([])
-    const [filteredProducts, setFilteredProducts] = useState<any[]>([]);
+    const [products, setProducts] = useState<Product[]>([])
+    const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
 
 
     useEffect(() => {
@@ -19,7 +27,7 @@ export default function Products() {
             })
     }, [])
 
-    const handleFilterChange = (filtered: any[]) => {
+    const handleFilterChange = (filtered: Product[]) => {
         setFilteredProducts(filtered);
     };
 
