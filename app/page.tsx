@@ -1,10 +1,15 @@
+import NavBar from "./components/navBar/NavBar";
+import Home from "./components/home/Home"
+import AboutUs from "./components/aboutUs/AboutUs";
+import Brands from "./components/brands/Brands";
 
-export default function Home() {
+export default function Page() {
   return (
-    <div>
-      <div className="flex justify-center p-14 text-[#d23232]">
-        <h1>SSG DISTRIBUIDORA</h1> {/*Aca  iria el logo/nombre en imagen*/}
-      </div>
+    <div className="flex flex-col sm:px-10 w-full overflow-x-hidden">
+      <NavBar />
+      <Home />
+      <Brands />
+      <AboutUs />
     </div>
   );
 }

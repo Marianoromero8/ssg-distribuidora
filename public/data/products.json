@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "image": "/Nuggets.jpeg",
+        "productName": "Nuggets",
+        "presentation": "Bolsa 1kg",
+        "brand": "Tiernis"
+    },
+    {
+        "id": 2,
+        "image": "/burguerTiernis.jpeg",
+        "productName": "Hamburguesa",
+        "presentation": "Caja 20 x 4",
+        "brand": "Tiernis"
+    },
+    {
+        "id": 3,
+        "image": "/quesoMilkaut.webp",
+        "productName": "Queso",
+        "presentation": "Caja 20",
+        "brand": "Milkaut"
+    },
+    {
+        "id": 4,
+        "image": "/Dulce-De-Leche-Milkaut-400-Gr-_1.webp",
+        "productName": "Dulce de Leche",
+        "presentation": "Caja x 10",
+        "brand": "Milkaut"
+    },
+    {
+        "id": 5,
+        "image": "/boogysBurguers.jpeg",
+        "productName": "Hambuerguesas",
+        "presentation": "Caja - 10 x 2",
+        "brand": "Boogys"
+    },
+    {
+        "id": 6,
+        "image": "/Hero-1-NotBurger-95g.webp",
+        "productName": "Hambuerguesas",
+        "presentation": "Caja - 20 x 2",
+        "brand": "NotCo"
+    }
+]
