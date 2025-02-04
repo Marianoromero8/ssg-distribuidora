@@ -11,20 +11,24 @@ import {
 } from "@/components/ui/dropdown-menu";
 import Image from "next/image";
 import Link from "next/link";
+import brands from "../../../public/data/products.json"
 
 
 //Le saque el focus a los DropdownMenuSubTrigger y DropdownMenuItem
 export default function NavBar() {
     return (
-        <div className="flex flex-row justify-center w-screen gap-5">
+        <div className="flex flex-row justify-center w-full gap-5">   {/*Le cambie el w-screen a w-full para que desaparezca el scroll para moverse a los costados FUNCIONO! */}
             <div className="">
-                <Image
-                    src="/Distribuidora-SSG_Logo-Negro_2024.svg"
-                    width={200}
-                    height={150}
-                    alt="Logo"
-                />
+                <Link href='/'>
+                    <Image
+                        src="/Distribuidora-SSG_Logo-Negro_2024.svg"
+                        width={200}
+                        height={150}
+                        alt="Logo"
+                    />
+                </Link>
             </div>
+
             <div className="flex flex-row justify-start items-center text-[#ffff] ps-14 gap-40 bg-[#4166e0] text-[#000] w-screen">
                 {/* Sobre nosotros */}
                 <DropdownMenu>
@@ -34,22 +38,15 @@ export default function NavBar() {
                 {/* Marcas */}
                 <DropdownMenu>
                     <DropdownMenuTrigger>Marcas</DropdownMenuTrigger>
-                    <DropdownMenuContent className="text-[#ffff] bg-[#4166e0]">
+                    <DropdownMenuContent className="text-[#ffff] bg-[#4166e0] max-h-48 overflow-y-auto">
                         <DropdownMenuSub>
-                            <DropdownMenuSub>
-                                <DropdownMenuSubTrigger>Milkaut</DropdownMenuSubTrigger>
-                                <DropdownMenuSubContent className="text-[#ffff] bg-[#4166e0]">
-                                    <DropdownMenuItem>Quesos</DropdownMenuItem>
-                                    <DropdownMenuItem>Manteca</DropdownMenuItem>
-                                </DropdownMenuSubContent>
-                            </DropdownMenuSub>
-                            <DropdownMenuSub>
-                                <DropdownMenuSubTrigger>NotCo</DropdownMenuSubTrigger>
-                                <DropdownMenuSubContent className="text-[#ffff] bg-[#4166e0]">
-                                    <DropdownMenuItem>Leche vegetal</DropdownMenuItem>
-                                    <DropdownMenuItem>Hamburguesas veganas</DropdownMenuItem>
-                                </DropdownMenuSubContent>
-                            </DropdownMenuSub>
+                            {brands.map((options) => (
+                                <DropdownMenuItem key={options.id}>
+                                    <Link href={`/brands/${options.brand}`}>
+                                        {options.brand}
+                                    </Link>
+                                </DropdownMenuItem>
+                            ))}
                         </DropdownMenuSub>
                     </DropdownMenuContent>
                 </DropdownMenu>
@@ -111,3 +108,19 @@ export default function NavBar() {
         </div>
     );
 }
+
+
+{/* <DropdownMenuSub>
+                                <DropdownMenuSubTrigger>Milkaut</DropdownMenuSubTrigger>
+                                <DropdownMenuSubContent className="text-[#ffff] bg-[#4166e0]">
+                                    <DropdownMenuItem>Quesos</DropdownMenuItem>
+                                    <DropdownMenuItem>Manteca</DropdownMenuItem>
+                                </DropdownMenuSubContent>
+                            </DropdownMenuSub>
+                            <DropdownMenuSub>
+                                <DropdownMenuSubTrigger>NotCo</DropdownMenuSubTrigger>
+                                <DropdownMenuSubContent className="text-[#ffff] bg-[#4166e0]">
+                                    <DropdownMenuItem>Leche vegetal</DropdownMenuItem>
+                                    <DropdownMenuItem>Hamburguesas veganas</DropdownMenuItem>
+                                </DropdownMenuSubContent>
+                            </DropdownMenuSub> */}

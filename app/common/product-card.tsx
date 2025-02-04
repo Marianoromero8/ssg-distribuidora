@@ -3,7 +3,8 @@ import Image from "next/image"
 type CardProps = {
     image: string,
     productName: string,
-    presentation: string
+    presentation: string,
+    alt: string
 }
 
 export default function ProductCard({ image, productName, presentation }: CardProps) {

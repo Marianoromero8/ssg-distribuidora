@@ -1,44 +1,178 @@
 [
     {
         "id": 1,
-        "image": "/Nuggets.jpeg",
-        "productName": "Nuggets",
-        "presentation": "Bolsa 1kg",
-        "brand": "Tiernis"
+        "src": "/tonadita.jpeg",
+        "height": 150,
+        "width": 150,
+        "brand": "Tonadita",
+        "products": []
     },
     {
         "id": 2,
-        "image": "/burguerTiernis.jpeg",
-        "productName": "Hamburguesa",
-        "presentation": "Caja 20 x 4",
-        "brand": "Tiernis"
+        "src": "/milkaut.jpeg",
+        "height": 150,
+        "width": 150,
+        "brand": "Milkaut",
+        "products": [
+            {
+                "id": 3,
+                "image": "/quesoMilkaut.webp",
+                "productName": "Queso",
+                "presentation": "Caja 20"
+            },
+            {
+                "id": 4,
+                "image": "/Dulce-De-Leche-Milkaut-400-Gr-_1.webp",
+                "productName": "Dulce de Leche",
+                "presentation": "Caja x 10"
+            }
+        ]
     },
     {
         "id": 3,
-        "image": "/quesoMilkaut.webp",
-        "productName": "Queso",
-        "presentation": "Caja 20",
-        "brand": "Milkaut"
+        "src": "/seda.jpeg",
+        "height": 150,
+        "width": 150,
+        "brand": "Seda",
+        "products": []
     },
     {
         "id": 4,
-        "image": "/Dulce-De-Leche-Milkaut-400-Gr-_1.webp",
-        "productName": "Dulce de Leche",
-        "presentation": "Caja x 10",
-        "brand": "Milkaut"
+        "src": "/conosud.jpeg",
+        "height": 150,
+        "width": 150,
+        "brand": "ConoSud",
+        "products": []
     },
     {
         "id": 5,
-        "image": "/boogysBurguers.jpeg",
-        "productName": "Hambuerguesas",
-        "presentation": "Caja - 10 x 2",
-        "brand": "Boogys"
+        "src": "/boogys.jpeg",
+        "height": 150,
+        "width": 150,
+        "brand": "Boogys",
+        "products": [
+            {
+                "id": 5,
+                "image": "/boogysBurguers.jpeg",
+                "productName": "Hambuerguesas",
+                "presentation": "Caja - 10 x 2"
+            }
+        ]
     },
     {
         "id": 6,
-        "image": "/Hero-1-NotBurger-95g.webp",
-        "productName": "Hambuerguesas",
-        "presentation": "Caja - 20 x 2",
-        "brand": "NotCo"
+        "src": "/lacomarca.jpeg",
+        "height": 150,
+        "width": 150,
+        "brand": "La Comarca",
+        "products": []
+    },
+    {
+        "id": 7,
+        "src": "/ranchoalto.jpeg",
+        "height": 150,
+        "width": 150,
+        "brand": "Rancho Alto",
+        "products": []
+    },
+    {
+        "id": 8,
+        "src": "/tiernis.jpeg",
+        "height": 150,
+        "width": 150,
+        "brand": "Tiernis",
+        "products": [
+            {
+                "id": 1,
+                "image": "/Nuggets.jpeg",
+                "productName": "Nuggets",
+                "presentation": "Bolsa 1kg"
+            },
+            {
+                "id": 2,
+                "image": "/burguerTiernis.jpeg",
+                "productName": "Hamburguesa",
+                "presentation": "Caja 20 x 4"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "src": "/granjatresarroyos.jpeg",
+        "height": 150,
+        "width": 150,
+        "brand": "Granja Tres Arroyos",
+        "products": []
+    },
+    {
+        "id": 10,
+        "src": "/benidorm.jpeg",
+        "height": 150,
+        "width": 150,
+        "brand": "Benidorm",
+        "products": []
+    },
+    {
+        "id": 11,
+        "src": "/mccain.jpeg",
+        "height": 150,
+        "width": 150,
+        "brand": "McCain",
+        "products": []
+    },
+    {
+        "id": 12,
+        "src": "/donbasilio.jpeg",
+        "height": 150,
+        "width": 150,
+        "brand": "Don Basilio",
+        "products": []
+    },
+    {
+        "id": 13,
+        "src": "/barraza.jpeg",
+        "height": 150,
+        "width": 150,
+        "brand": "Barraza",
+        "products": []
+    },
+    {
+        "id": 14,
+        "src": "/notco.jpeg",
+        "height": 150,
+        "width": 150,
+        "brand": "NotCo",
+        "products": [
+            {
+                "id": 6,
+                "image": "/Hero-1-NotBurger-95g.webp",
+                "productName": "Hambuerguesas",
+                "presentation": "Caja - 20 x 2"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "src": "/g.jpeg",
+        "height": 150,
+        "width": 150,
+        "brand": "G",
+        "products": []
+    },
+    {
+        "id": 16,
+        "src": "/simplot.jpeg",
+        "height": 150,
+        "width": 150,
+        "brand": "Simplot",
+        "products": []
+    },
+    {
+        "id": 17,
+        "src": "/s.jpeg",
+        "height": 150,
+        "width": 150,
+        "brand": "S",
+        "products": []
     }
 ]

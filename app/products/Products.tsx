@@ -1,63 +1,72 @@
 import ProductCard from "@/app/common/product-card"
 import { useEffect, useState } from "react"
 import { FilterBrands } from "./filtersBrands"
-import Image from "next/image";
-import Link from "next/link";
 
+interface Brand {
+    id: number;
+    src: string;
+    height: number;
+    width: number;
+    brand: string;
+    products: Product[];
+}
 export interface Product {
     id: string | number;
     image: string;
     productName: string;
     presentation: string;
-    brand: string;
 }
 
 export default function Products() {
 
-    const [products, setProducts] = useState<Product[]>([])
+    const [brands, setBrands] = useState<Brand[]>([])
     const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
 
 
     useEffect(() => {
         fetch('/data/products.json')
-            .then((response) => response.json())
-            .then((data) => {
-                setProducts(data)
-                setFilteredProducts(data);
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
             })
+            .then((data: Brand[]) => {
+                setBrands(data);
+                setFilteredProducts(data?.flatMap((brand) => brand.products) || []);
+            })
+            .catch((error) => {
+                console.error('Error fetching data:', error);
+            });
     }, [])
 
+    // const handleFilterChange = (filtered: Product[]) => {
+    //     setFilteredProducts(filtered);
+    // };
+
     const handleFilterChange = (filtered: Product[]) => {
-        setFilteredProducts(filtered);
+        setFilteredProducts((prev) =>
+            JSON.stringify(prev) !== JSON.stringify(filtered) ? filtered : prev
+        );
     };
 
     return (
         <div className="px-5 sm:px-10" >
-            <div className=" flex flex-row justify-start gap-60">
-                <div>
-                    <Link href="/">
-                        <Image
-                            src="/Distribuidora-SSG_Logo-Negro_2024.svg"
-                            width={200}
-                            height={150}
-                            alt="Logo"
-                            className="pt-3"
-                        />
-                    </Link>
-                </div >
+            <div className=" flex flex-row justify-center gap-60">
                 <div className=" pt-5 text-5xl font-bold text-[#f17900ec]">
                     <h1>Productos</h1>
                 </div>
             </div>
             <hr className="border border-[#f17900ec] " />
-            <FilterBrands products={products} onFilterChange={handleFilterChange} />
+            <FilterBrands brands={brands} onFilterChange={handleFilterChange} />
             <div id="products" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ml-5 gap-8">
                 {filteredProducts.map((product) => (
                     <ProductCard
                         key={product.id}
-                        image={product.image}
+                        image={product.image || '/Distribuidora-SSG_Logo-Blanco_2024.svg'}
                         productName={product.productName}
                         presentation={product.presentation}
+                        alt={product.productName}
                     />
                 ))}
             </div>
