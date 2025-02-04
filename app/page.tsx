@@ -1,10 +1,6 @@
-import NavBar from "./components/navBar/NavBar";
 import Home from "./components/home/Home"
 import AboutUs from "./components/aboutUs/AboutUs";
 import Providers from "./components/providers/Providers";
-import Image from "next/image";
-import Link from "next/link";
-
 export default function Page() {
   return (
     <div className="flex flex-col sm:px-10 w-full overflow-x-hidden">

@@ -2,7 +2,6 @@
 
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import productsData from '@/public/data/products.json'; // Asegúrate de que la ruta es correcta
 import ProductCard from '@/app/common/product-card';
 
 interface Product {
