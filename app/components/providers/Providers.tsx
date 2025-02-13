@@ -17,7 +17,7 @@ export default function Brands() {
                 <section className="flex flex-wrap justify-center mt-8 gap-12">
                     {brands.map((img) => (
                         <div key={img.id}>
-                            <Link href={`${img.website}`}>
+                            <Link href={`/brands/${img.brand}`}>
                                 <Image src={img.src} alt={img.brand} width={img.width} height={img.height} className="w-40 h-40 border rounded-full overflow-hidden" />
                             </Link>
                         </div>
