@@ -5,6 +5,7 @@
         "height": 150,
         "width": 150,
         "brand": "Tonadita",
+        "website": "https://www.tonadita.com/",
         "products": []
     },
     {
@@ -12,6 +13,7 @@
         "src": "/milkaut.jpeg",
         "height": 150,
         "width": 150,
+        "website": "https://milkautprofesional.com.ar/",
         "brand": "Milkaut",
         "products": [
             {
@@ -33,6 +35,7 @@
         "src": "/seda.jpeg",
         "height": 150,
         "width": 150,
+        "website": "https://www.sedasa.com.ar/",
         "brand": "Seda",
         "products": []
     },
@@ -41,6 +44,7 @@
         "src": "/conosud.jpeg",
         "height": 150,
         "width": 150,
+        "website": "https://conosud-sa.com.ar/",
         "brand": "ConoSud",
         "products": []
     },
@@ -49,6 +53,7 @@
         "src": "/boogys.jpeg",
         "height": 150,
         "width": 150,
+        "website": "",
         "brand": "Boogys",
         "products": [
             {
@@ -64,6 +69,7 @@
         "src": "/lacomarca.jpeg",
         "height": 150,
         "width": 150,
+        "website": "",
         "brand": "La Comarca",
         "products": []
     },
@@ -72,6 +78,7 @@
         "src": "/ranchoalto.jpeg",
         "height": 150,
         "width": 150,
+        "website": "https://ranchoalto.com.ar/",
         "brand": "Rancho Alto",
         "products": []
     },
@@ -80,6 +87,7 @@
         "src": "/tiernis.jpeg",
         "height": 150,
         "width": 150,
+        "website": "",
         "brand": "Tiernis",
         "products": [
             {
@@ -101,6 +109,7 @@
         "src": "/granjatresarroyos.jpeg",
         "height": 150,
         "width": 150,
+        "website": "https://www.grupogta.com.ar/marcas/granja-tres-arroyos",
         "brand": "Granja Tres Arroyos",
         "products": []
     },
@@ -109,6 +118,7 @@
         "src": "/benidorm.jpeg",
         "height": 150,
         "width": 150,
+        "website": "https://benidorm.com.ar/",
         "brand": "Benidorm",
         "products": []
     },
@@ -117,6 +127,7 @@
         "src": "/mccain.jpeg",
         "height": 150,
         "width": 150,
+        "website": "https://mccain.com.ar/",
         "brand": "McCain",
         "products": []
     },
@@ -125,6 +136,7 @@
         "src": "/donbasilio.jpeg",
         "height": 150,
         "width": 150,
+        "website": "https://donbasilio.com/",
         "brand": "Don Basilio",
         "products": []
     },
@@ -133,6 +145,7 @@
         "src": "/barraza.jpeg",
         "height": 150,
         "width": 150,
+        "website": "https://web.lacteosbarraza.com.ar/",
         "brand": "Barraza",
         "products": []
     },
@@ -141,6 +154,7 @@
         "src": "/notco.jpeg",
         "height": 150,
         "width": 150,
+        "website": "https://notco.com/ar/",
         "brand": "NotCo",
         "products": [
             {
@@ -156,6 +170,7 @@
         "src": "/g.jpeg",
         "height": 150,
         "width": 150,
+        "website": "",
         "brand": "G",
         "products": []
     },
@@ -164,6 +179,7 @@
         "src": "/simplot.jpeg",
         "height": 150,
         "width": 150,
+        "website": "https://www.simplotfoods.com/latam",
         "brand": "Simplot",
         "products": []
     },
@@ -172,6 +188,7 @@
         "src": "/s.jpeg",
         "height": 150,
         "width": 150,
+        "website": "",
         "brand": "S",
         "products": []
     }

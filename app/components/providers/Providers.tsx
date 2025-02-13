@@ -2,6 +2,7 @@
 import Image from "next/image"
 import React from "react"
 import brands from "../../../public/data/products.json"
+import Link from "next/link"
 
 
 
@@ -16,7 +17,9 @@ export default function Brands() {
                 <section className="flex flex-wrap justify-center mt-8 gap-12">
                     {brands.map((img) => (
                         <div key={img.id}>
-                            <Image src={img.src} alt={img.brand} width={img.width} height={img.height} className="w-40 h-40 border rounded-full overflow-hidden" />
+                            <Link href={`${img.website}`}>
+                                <Image src={img.src} alt={img.brand} width={img.width} height={img.height} className="w-40 h-40 border rounded-full overflow-hidden" />
+                            </Link>
                         </div>
                     ))}
                 </section>
