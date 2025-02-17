@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export default function Home() {
     return (
-        <div className="flex flex-row justify-center items-center ml-20 mr-20 mt-8 bg-[#ae2ab066]">
+        <div className="flex flex-row justify-center items-center ml-20 mr-20 mt-8">
             <Carousel className="flex justify-center items-center" >
                 <CarouselContent className="">
-                    <CarouselItem className="flex justify-center items-center snap-center">
-                        <Image src="/milkaut.jpeg" width={300} height={300} alt="Logo" />
+                    <CarouselItem className="flex justify-center items-center snap-center ">
+                        <Image src="/milkaut.jpeg" width={300} height={300} alt="Logo" className="bg-[#e8decb]" />
                     </CarouselItem>
                     <CarouselItem className="flex justify-center items-center snap-center">
                         <Image src="/tiernis.jpeg" width={300} height={300} alt="Logo" />

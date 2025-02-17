@@ -17,8 +17,8 @@ import brands from "../../../public/data/products.json"
 //Le saque el focus a los DropdownMenuSubTrigger y DropdownMenuItem
 export default function NavBar() {
     return (
-        <div className="flex flex-row justify-center w-full gap-5">   {/*Le cambie el w-screen a w-full para que desaparezca el scroll para moverse a los costados FUNCIONO! */}
-            <div className="">
+        <div className="flex flex-row justify-center w-full gap-5 bg-[#4166e0]">   {/*Le cambie el w-screen a w-full para que desaparezca el scroll para moverse a los costados FUNCIONO! */}
+            <div className="border rounded-full bg-white">
                 <Link href='/'>
                     <Image
                         src="/Distribuidora-SSG_Logo-Negro_2024.svg"

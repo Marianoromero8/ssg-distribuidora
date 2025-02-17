@@ -54,8 +54,8 @@ export default function BrandPage() {
     // brandProducts.length > 0
     return (
         <div>
-            <h1 className='text-5xl text-[#f17900ec] flex justify-center p-5'>Productos {brand}</h1>
-            <hr className="border border-[#f17900ec] " />
+            <h1 className='text-5xl text-[#4166e0] flex justify-center p-5'>Productos {brand}</h1>
+            <hr className="border border-[#4166e0] " />
             {loading ? (
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ml-5 gap-8 mt-5">
                     {Array.from({ length: 8 }).map((_, index) => (
@@ -79,7 +79,7 @@ export default function BrandPage() {
                     ))}
                 </div>
             ) : (
-                <p className='text-[#f17900ec] text-2xl flex justify-center p-10'>No hay productos para esta marca.</p>
+                <p className='text-[#4166e0] text-2xl flex justify-center p-10'>No hay productos para esta marca.</p>
             )}
         </div>
     );

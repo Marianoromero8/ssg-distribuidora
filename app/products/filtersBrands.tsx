@@ -44,7 +44,7 @@ export function FilterBrands({ brands = [], onFilterChange }: FilterBrandsProps)
 
     return (
         <div className="flex justify-start m-5 p-2 ">
-            <select name="" id="" onChange={handleFilter} value={brand} className="text-[#f17900ec] border border-[#f17900ec] rounded-sm hover:bg-[#f17900ec] hover:border-transparent hover:text-[#fff] transition-colors">
+            <select name="" id="" onChange={handleFilter} value={brand} className="text-[#4166e0] border border-[#4166e0] rounded-sm hover:bg-[#4166e0] hover:border-transparent hover:text-[#fff] transition-colors">
                 {uniqueBrands.map((b) => (
                     <option key={b} value={b}>
                         {b}
