@@ -51,7 +51,7 @@ export default function Products() {
     };
 
     return (
-        <div className="px-5 sm:px-10" >
+        <div className="px-5 sm:px-10 mb-8" >
             <div className=" flex flex-row justify-center gap-60">
                 <div className=" pt-5 text-5xl font-bold text-[#4166e0]">
                     <h1>Productos</h1>

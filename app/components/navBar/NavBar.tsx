@@ -12,6 +12,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import brands from "../../../public/data/products.json"
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 
 //Le saque el focus a los DropdownMenuSubTrigger y DropdownMenuItem
@@ -63,17 +64,38 @@ export default function NavBar() {
                             </Link>
                         </DropdownMenuItem>
                         <DropdownMenuSub>
-                            <DropdownMenuSubTrigger>Congelados</DropdownMenuSubTrigger>
+                            <DropdownMenuSubTrigger>
+                                <Link href="/products/congelados">
+                                    Congelados
+                                </Link>
+                            </DropdownMenuSubTrigger>
                             <DropdownMenuSubContent className="text-[#ffff] bg-[#4166e0]">
                                 <DropdownMenuItem>Papas congeladas</DropdownMenuItem>
                                 <DropdownMenuItem>Hamburguesas</DropdownMenuItem>
+                                <DropdownMenuItem>Frutas y Verduras</DropdownMenuItem>
                             </DropdownMenuSubContent>
                         </DropdownMenuSub>
                         <DropdownMenuSub>
-                            <DropdownMenuSubTrigger>Frescos</DropdownMenuSubTrigger>
+                            <DropdownMenuSubTrigger>
+                                <Link href="/products/refrigerados">
+                                    Refrigerados
+                                </Link>
+                            </DropdownMenuSubTrigger>
                             <DropdownMenuSubContent className="text-[#ffff] bg-[#4166e0]">
-                                <DropdownMenuItem>Verduras</DropdownMenuItem>
-                                <DropdownMenuItem>Nuggets</DropdownMenuItem>
+                                <DropdownMenuItem>Aderezos</DropdownMenuItem>
+                                <DropdownMenuItem>Lacteos</DropdownMenuItem>
+                            </DropdownMenuSubContent>
+                        </DropdownMenuSub>
+                        <DropdownMenuSub>
+                            <DropdownMenuSubTrigger>
+                                <Link href="/products/secos">
+                                    Secos
+                                </Link>
+                            </DropdownMenuSubTrigger>
+                            <DropdownMenuSubContent className="text-[#ffff] bg-[#4166e0]">
+                                <DropdownMenuItem>Yerba Mate</DropdownMenuItem>
+                                <DropdownMenuItem>Panes</DropdownMenuItem>
+                                <DropdownMenuItem>Food Service</DropdownMenuItem>
                             </DropdownMenuSubContent>
                         </DropdownMenuSub>
                     </DropdownMenuContent>
@@ -83,13 +105,23 @@ export default function NavBar() {
                 <DropdownMenu>
                     <DropdownMenuTrigger>Clientes</DropdownMenuTrigger>
                     <DropdownMenuContent className="text-[#ffff] bg-[#4166e0]">
-                        <DropdownMenuItem>Madd</DropdownMenuItem>
+                        <DropdownMenuItem>
+                            <Link href="https://www.instagram.com/madd.burgers/" target="_blank">
+                                Madd
+                            </Link>
+                        </DropdownMenuItem>
                         <DropdownMenuSeparator />
-                        <DropdownMenuItem>Reina</DropdownMenuItem>
+                        <DropdownMenuItem>
+                            <Link href="https://www.instagram.com/reina.burguesa/" target="_blank">
+                                Reina
+                            </Link>
+                        </DropdownMenuItem>
                         <DropdownMenuSeparator />
-                        <DropdownMenuItem>McDonald</DropdownMenuItem>
-                        <DropdownMenuSeparator />
-                        <DropdownMenuItem>Fogón Salvaje</DropdownMenuItem>
+                        <DropdownMenuItem>
+                            <Link href="https://www.instagram.com/salvaje.burger/" target="_blank">
+                                Fogón Salvaje
+                            </Link>
+                        </DropdownMenuItem>
                     </DropdownMenuContent>
                 </DropdownMenu>
 
@@ -97,11 +129,21 @@ export default function NavBar() {
                 <DropdownMenu>
                     <DropdownMenuTrigger>Contacto</DropdownMenuTrigger>
                     <DropdownMenuContent className="text-[#ffff] bg-[#4166e0]">
-                        <DropdownMenuItem>Whatsapp</DropdownMenuItem>
+                        <DropdownMenuItem>
+                            <Link href="https://www.instagram.com/ssgdistribuciones/" target="_blank">
+                                <div className="flex flex-row items-center gap-2">
+                                    <FaInstagram />Instragram
+                                </div>
+                            </Link>
+                        </DropdownMenuItem>
                         <DropdownMenuSeparator />
-                        <DropdownMenuItem>Instragram</DropdownMenuItem>
-                        <DropdownMenuSeparator />
-                        <DropdownMenuItem>Facebook</DropdownMenuItem>
+                        <DropdownMenuItem>
+                            <Link href="https://www.facebook.com/SSGDistribuidora?locale=es_LA" target="_blank">
+                                <div className="flex flex-row items-center gap-2">
+                                    <FaFacebook />Facebook
+                                </div>
+                            </Link>
+                        </DropdownMenuItem>
                     </DropdownMenuContent>
                 </DropdownMenu>
             </div>

@@ -11,61 +11,81 @@
                 "id": 7,
                 "image": "/products/_clasica_5kg_tonadita.png",
                 "productName": "Manteca",
-                "presentation": "Caja x 5kg"
+                "presentation": "Caja x 5kg",
+                "category": "refrigerados",
+                "subcategory": "lacteos"
             },
             {
                 "id": 8,
                 "image": "/products/chantilly_tonadita.png",
                 "productName": "Crema Chantilly",
-                "presentation": "250 GR"
+                "presentation": "250 GR",
+                "category": "refrigerados",
+                "subcategory": "lacteos"
             },
             {
                 "id": 9,
                 "image": "/products/bd_crema_clasica_200_tonadita.png",
                 "productName": "Crema Clasica",
-                "presentation": "200 GR"
+                "presentation": "200 GR",
+                "category": "refrigerados",
+                "subcategory": "lacteos"
             },
             {
                 "id": 10,
                 "image": "/products/dipCheddar_3kg_tonadita.png",
                 "productName": "Dip Cheddar",
-                "presentation": "3 KG"
+                "presentation": "3 KG",
+                "category": "refrigerados",
+                "subcategory": "quesos"
             },
             {
                 "id": 11,
                 "image": "/products/fetas_10_azul_tonadita.png",
                 "productName": "Fetas Queso Azul",
-                "presentation": "1 x 10"
+                "presentation": "1 x 10",
+                "category": "refrigerados",
+                "subcategory": "quesos"
             },
             {
                 "id": 12,
                 "image": "/products/fetas_cheddar_tonadita.png",
                 "productName": "Fetas Queso Cheddar",
-                "presentation": "1 x 10"
+                "presentation": "1 x 10",
+                "category": "refrigerados",
+                "subcategory": "quesos"
             },
             {
                 "id": 13,
                 "image": "/products/fetas_168_mozzarella_tonadita.png",
                 "productName": "Fetas Queso Mozzarella",
-                "presentation": "1 x 168"
+                "presentation": "1 x 168",
+                "category": "refrigerados",
+                "subcategory": "quesos"
             },
             {
                 "id": 14,
                 "image": "/products/fetas_cheddar_168_tonadita.png",
                 "productName": "Fetas Queso Cheddar",
-                "presentation": "1 x 168"
+                "presentation": "1 x 168",
+                "category": "refrigerados",
+                "subcategory": "quesos"
             },
             {
                 "id": 15,
                 "image": "/products/manteca_clasica_100_tonadita.png",
                 "productName": "Manteca Clasica",
-                "presentation": "100 GR"
+                "presentation": "100 GR",
+                "category": "refrigerados",
+                "subcategory": "lacteos"
             },
             {
                 "id": 16,
                 "image": "/products/manteca_clasica_200_tonadita.png",
                 "productName": "Manteca Clasica",
-                "presentation": "200 GR"
+                "presentation": "200 GR",
+                "category": "refrigerados",
+                "subcategory": "lacteos"
             }
         ]
     },
@@ -81,13 +101,17 @@
                 "id": 3,
                 "image": "/products/cremas-44-porciento-milkaut.webp",
                 "productName": "Crema de Leche 44%",
-                "presentation": "5 L"
+                "presentation": "5 L",
+                "category": "refrigerados",
+                "subcategory": "lacteos"
             },
             {
                 "id": 4,
                 "image": "/products/crematto_F_milkaut.png",
                 "productName": "Crematto Clasico Milkaut",
-                "presentation": "3.5 KG"
+                "presentation": "3.5 KG",
+                "category": "refrigerados",
+                "subcategory": "lacteos"
             },
             {
                 "id": 17,
@@ -105,43 +129,57 @@
                 "id": 19,
                 "image": "/products/cheddar_F_milkaut.webp",
                 "productName": "Cheddar Milkaut",
-                "presentation": "3.5 KG"
+                "presentation": "3.5 KG",
+                "category": "refrigerados",
+                "subcategory": "quesos"
             },
             {
                 "id": 20,
                 "image": "/products/crema_frente_T_milkaut.webp",
                 "productName": "Crematto Clasico Milkaut",
-                "presentation": "1.5 KG"
+                "presentation": "1.5 KG",
+                "category": "refrigerados",
+                "subcategory": "lacteos"
             },
             {
                 "id": 21,
                 "image": "/products/crema-39-milkaut.webp",
                 "productName": "Manteca Clasica",
-                "presentation": "200 GR"
+                "presentation": "200 GR",
+                "category": "refrigerados",
+                "subcategory": "lacteos"
             },
             {
                 "id": 22,
                 "image": "/products/lechemilkautdescremada.jpeg",
                 "productName": "Leche Descremada",
-                "presentation": "1 L"
+                "presentation": "1 L",
+                "category": "refrigerados",
+                "subcategory": "lacteos"
             },
             {
                 "id": 23,
                 "image": "/products/lechemilkautentera.jpeg",
                 "productName": "Leche Entera",
-                "presentation": "1 L"
+                "presentation": "1 L",
+                "category": "refrigerados",
+                "subcategory": "lacteos"
             },
             {
                 "id": 24,
                 "image": "/products/manteca_5kg_milkaut.webp",
                 "productName": "Manteca Clasica",
-                "presentation": "5 KG"
+                "presentation": "5 KG",
+                "category": "refrigerados",
+                "subcategory": "lacteos"
             },
             {
                 "id": 25,
                 "image": "/products/Pack_queso-fetas2_Cheddar_milkaut.webp",
                 "productName": "Fetas Queso Cheddar",
-                "presentation": "1 x 192"
+                "presentation": "1 x 192",
+                "category": "refrigerados",
+                "subcategory": "quesos"
             }
         ]
     },
@@ -240,31 +278,41 @@
                 "id": 26,
                 "image": "/products/cheddar-500cc-benidorm.png",
                 "productName": "Benidorm Cheddar",
-                "presentation": "500 ML"
+                "presentation": "500 ML",
+                "category": "refrigerados",
+                "subcategory": "aderezos"
             },
             {
                 "id": 27,
                 "image": "/products/ketchup-500cc-benidorm.png",
                 "productName": "Benidorm Ketchup",
-                "presentation": "500 ML"
+                "presentation": "500 ML",
+                "category": "refrigerados",
+                "subcategory": "aderezos"
             },
             {
                 "id": 28,
                 "image": "/products/mayonesa-500cc-benidorm.png",
                 "productName": "Benidorm Mayonesa",
-                "presentation": "500 ML"
+                "presentation": "500 ML",
+                "category": "refrigerados",
+                "subcategory": "aderezos"
             },
             {
                 "id": 29,
                 "image": "/products/mostaza-500cc-benidorm.png",
                 "productName": "Benidorm Mostaza",
-                "presentation": "500 ML"
+                "presentation": "500 ML",
+                "category": "refrigerados",
+                "subcategory": "aderezos"
             },
             {
                 "id": 30,
                 "image": "/products/mayonesa2900-benidorm.jpg",
                 "productName": "Benidorm Mayonesa",
-                "presentation": "2.9 KG"
+                "presentation": "2.9 KG",
+                "category": "refrigerados",
+                "subcategory": "aderezos"
             }
         ]
     },
@@ -289,31 +337,41 @@
                 "id": 31,
                 "image": "/products/don_basilio_500gr.jpg",
                 "productName": "Yerba Tradicional - Don Basilio",
-                "presentation": "500 GR"
+                "presentation": "500 GR",
+                "category": "secos",
+                "subcategory": "yerba mate"
             },
             {
                 "id": 32,
                 "image": "/products/especial_donbasilio_500gr.jpg",
                 "productName": "Yerba Especial - Don Basilio",
-                "presentation": "500 GR"
+                "presentation": "500 GR",
+                "category": "secos",
+                "subcategory": "yerba mate"
             },
             {
                 "id": 33,
                 "image": "/products/suave_donbasilio_500gr.jpg",
                 "productName": "Yerba Suave - Don Basilio",
-                "presentation": "500 GR"
+                "presentation": "500 GR",
+                "category": "secos",
+                "subcategory": "yerba mate"
             },
             {
                 "id": 34,
                 "image": "/products/terere_donbasilio_500gr.jpg",
                 "productName": "Yerba Terere - Don Basilio",
-                "presentation": "500 GR"
+                "presentation": "500 GR",
+                "category": "secos",
+                "subcategory": "yerba mate"
             },
             {
                 "id": 35,
                 "image": "/products/matecocido_donbasilio_x25.jpg",
                 "productName": "Mate Cocido - Don Basilio",
-                "presentation": "1 x 25"
+                "presentation": "1 x 25",
+                "category": "secos",
+                "subcategory": "yerba mate"
             }
         ]
     },
@@ -338,13 +396,17 @@
                 "id": 6,
                 "image": "/products/NotChicken-Crispy.webp",
                 "productName": "Not Chicken Crispy",
-                "presentation": "1 x 2 unidades 100GR"
+                "presentation": "1 x 2 unidades 100GR",
+                "category": "congelados",
+                "subcategory": "rebozado"
             },
             {
                 "id": 36,
                 "image": "/products/NotCo-80grx4.webp",
                 "productName": "Not Burguer",
-                "presentation": "1 x 4 unidades 80GR"
+                "presentation": "1 x 4 unidades 80GR",
+                "category": "congelados",
+                "subcategory": "hamburguesa"
             }
         ]
     },
@@ -360,7 +422,9 @@
                 "id": 37,
                 "image": "/products/triturado-tomate.jpg",
                 "productName": "Tomate Triturado - Gallardo",
-                "presentation": "8 KG"
+                "presentation": "8 KG",
+                "category": "secos",
+                "subcategory": "food service"
             }
         ]
     },
