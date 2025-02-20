@@ -14,7 +14,6 @@ import Link from "next/link";
 import brands from "../../../public/data/products.json"
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 
-
 //Le saque el focus a los DropdownMenuSubTrigger y DropdownMenuItem
 export default function NavBar() {
     return (
