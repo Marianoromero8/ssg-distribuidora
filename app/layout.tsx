@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Ubuntu } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/navBar/NavBar";
 import WhatsAppButton from "./common/whatsappButton";
@@ -12,6 +12,13 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const ubuntu = Ubuntu({
+  weight: "400",
+  style: "italic",
+  subsets: ["latin"],
+  variable: "--font-ubuntu",
 });
 
 export const metadata: Metadata = {
@@ -27,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#e8decb]`}
+        className={`${geistSans.variable} ${geistMono.variable} ${ubuntu.variable} antialiased bg-[#e8decb]`}
       >
         <NavBar />
         {children}
