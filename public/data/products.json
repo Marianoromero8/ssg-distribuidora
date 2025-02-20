@@ -190,7 +190,16 @@
         "width": 150,
         "website": "https://www.sedasa.com.ar/",
         "brand": "Seda",
-        "products": []
+        "products": [
+            {
+                "id": 38,
+                "image": "/products/aceiteSEDA.webp",
+                "productName": "Alto Oleico - SEDA",
+                "presentation": "10 L",
+                "category": "secos",
+                "subcategory": "food service"
+            }
+        ]
     },
     {
         "id": 4,
@@ -323,7 +332,40 @@
         "width": 150,
         "website": "https://mccain.com.ar/",
         "brand": "McCain",
-        "products": []
+        "products": [
+            {
+                "id": 39,
+                "image": "/products/mccain noisettes.jpg",
+                "productName": "Noisette McCain",
+                "presentation": "2.5 KG",
+                "category": "congelados",
+                "subcategory": "papas fritas"
+            },
+            {
+                "id": 40,
+                "image": "/products/mccain smiles.jpg",
+                "productName": "Smiles McCain",
+                "presentation": "1.5 KG",
+                "category": "congelados",
+                "subcategory": "papas fritas"
+            },
+            {
+                "id": 41,
+                "image": "/products/premiummccain.png",
+                "productName": "Tradicionales McCain",
+                "presentation": "2.25 KG",
+                "category": "congelados",
+                "subcategory": "papas fritas"
+            },
+            {
+                "id": 42,
+                "image": "/products/arosdecebollamccain.png",
+                "productName": "Aros de Cebolla McCain",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "papas fritas"
+            }
+        ]
     },
     {
         "id": 12,
@@ -382,7 +424,56 @@
         "width": 150,
         "website": "https://web.lacteosbarraza.com.ar/",
         "brand": "Barraza",
-        "products": []
+        "products": [
+            {
+                "id": 47,
+                "image": "/products/muzzarella_cilindrica_3k.jpg",
+                "productName": "Muzzarella Cilindrica Barraza",
+                "presentation": "???",
+                "category": "refrigerados",
+                "subcategory": "quesos"
+            },
+            {
+                "id": 48,
+                "image": "/products/Muzzarella_industrial_10kg.jpg",
+                "productName": "Muzzarella Horma Barraza",
+                "presentation": "???",
+                "category": "refrigerados",
+                "subcategory": "quesos"
+            },
+            {
+                "id": 49,
+                "image": "/products/Provoleta.jpg",
+                "productName": "Provoleta Barraza",
+                "presentation": "???",
+                "category": "refrigerados",
+                "subcategory": "quesos"
+            },
+            {
+                "id": 50,
+                "image": "/products/Queso_Azul.jpg",
+                "productName": "Queso Azul Barraza",
+                "presentation": "???",
+                "category": "refrigerados",
+                "subcategory": "quesos"
+            },
+            {
+                "id": 51,
+                "image": "/products/Queso_Cremoso_Horma.jpg",
+                "productName": "Queso Cremoso Barraza",
+                "presentation": "???",
+                "category": "refrigerados",
+                "subcategory": "quesos"
+            },
+            {
+                "id": 52,
+                "image": "/products/tybo.jpg",
+                "productName": "Queso Tybo Barraza",
+                "presentation": "???",
+                "category": "refrigerados",
+                "subcategory": "quesos"
+            }
+        ]
     },
     {
         "id": 14,
@@ -406,7 +497,7 @@
                 "productName": "Not Burguer",
                 "presentation": "1 x 4 unidades 80GR",
                 "category": "congelados",
-                "subcategory": "hamburguesa"
+                "subcategory": "hamburguesas"
             }
         ]
     },
@@ -435,7 +526,32 @@
         "width": 150,
         "website": "https://www.simplotfoods.com/latam",
         "brand": "Simplot",
-        "products": []
+        "products": [
+            {
+                "id": 43,
+                "image": "/products/simplot tradicionales.jpg",
+                "productName": "Tradicional Simplot",
+                "presentation": "2.5 KG",
+                "category": "congelados",
+                "subcategory": "papas fritas"
+            },
+            {
+                "id": 44,
+                "image": "/products/simplot extracrunch fino.jpg",
+                "productName": "Extra Crunch Corte Fino Simplot",
+                "presentation": "2.5 KG",
+                "category": "congelados",
+                "subcategory": "papas fritas"
+            },
+            {
+                "id": 45,
+                "image": "/products/simplot extracrunch tradicional.jpg",
+                "productName": "Extra Crunch Simplot",
+                "presentation": "2.5 KG",
+                "category": "congelados",
+                "subcategory": "papas fritas"
+            }
+        ]
     },
     {
         "id": 17,
@@ -445,5 +561,137 @@
         "website": "",
         "brand": "S",
         "products": []
+    },
+    {
+        "id": 18,
+        "src": "/lambweston.jpg",
+        "height": 150,
+        "width": 150,
+        "website": "https://www.lambweston.com.ar/",
+        "brand": "LambWeston",
+        "products": [
+            {
+                "id": 46,
+                "image": "/products/baston-tradicional-2.5-kg-lamb-weston.webp",
+                "productName": "Tradicionales Lambweston",
+                "presentation": "2.5 KG",
+                "category": "congelados",
+                "subcategory": "papas fritas"
+            },
+            {
+                "id": 58,
+                "image": "/products/baston-fino-2.5kg-lamb-weston.webp",
+                "productName": "Corte Fino Lambweston",
+                "presentation": "2.5 KG",
+                "category": "congelados",
+                "subcategory": "papas fritas"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "src": "/tapalque.jpeg",
+        "height": 150,
+        "width": 150,
+        "website": "https://tapalquealimentos.com.ar/",
+        "brand": "Tapalque",
+        "products": [
+            {
+                "id": 55,
+                "image": "/products/Fiambre-cocido-de-paleta-cuadrado.jpg",
+                "productName": "Cocido de Paleta Tapalque",
+                "presentation": "????",
+                "category": "refrigerados",
+                "subcategory": "fiambres"
+            },
+            {
+                "id": 56,
+                "image": "/products/jamoncocido.jpg",
+                "productName": "Jamon Cocido Tapalque",
+                "presentation": "????",
+                "category": "refrigerados",
+                "subcategory": "fiambres"
+            },
+            {
+                "id": 57,
+                "image": "/products/Panceta-Ahumada-Con-Cuero.jpg",
+                "productName": "Panceta Ahumada Tapalque",
+                "presentation": "????",
+                "category": "refrigerados",
+                "subcategory": "fiambres"
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "src": "/rapipap-550x270.jpg",
+        "height": 150,
+        "width": 150,
+        "website": "",
+        "brand": "Rapipap",
+        "products": [
+            {
+                "id": 53,
+                "image": "/products/RAPIPAP-BASTON-x2500.webp",
+                "productName": "Tradicionales Rapipap",
+                "presentation": "2.5 KG",
+                "category": "congelados",
+                "subcategory": "papas fritas"
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "src": "/puntadeagua.jpg",
+        "height": 150,
+        "width": 150,
+        "website": "https://www.puntadelagua.com.ar/",
+        "brand": "Punta del Agua",
+        "products": [
+            {
+                "id": 54,
+                "image": "/products/HORMA-SARDO-400x400.png",
+                "productName": "Sardo Punta del Agua",
+                "presentation": "????",
+                "category": "refrigerados",
+                "subcategory": "quesos"
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "src": "/elartesano.jpeg",
+        "height": 150,
+        "width": 150,
+        "website": "https://www.productoselartesano.com.ar/",
+        "brand": "El Artesano",
+        "products": [
+            {
+                "id": 59,
+                "image": "/products/crudo.png",
+                "productName": "Jamon Crudo El Artesano",
+                "presentation": "????",
+                "category": "refrigerados",
+                "subcategory": "fiambres"
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "src": "/lario logos.png",
+        "height": 150,
+        "width": 150,
+        "website": "https://lario.com.ar/",
+        "brand": "Lario",
+        "products": [
+            {
+                "id": 60,
+                "image": "/products/cantimpalo.png",
+                "productName": "Cantimpalo Lario",
+                "presentation": "????",
+                "category": "refrigerados",
+                "subcategory": "fiambres"
+            }
+        ]
     }
 ]

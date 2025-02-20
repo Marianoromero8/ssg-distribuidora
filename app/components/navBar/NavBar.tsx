@@ -16,6 +16,16 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 //Le saque el focus a los DropdownMenuSubTrigger y DropdownMenuItem
 export default function NavBar() {
+
+    const scrollToSection = (sectionId: string) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            console.error(`Element with id "${sectionId}" not found.`);
+        }
+    }
+
     return (
         <div className="flex flex-row justify-center w-full gap-5 bg-[#4166e0]">   {/*Le cambie el w-screen a w-full para que desaparezca el scroll para moverse a los costados FUNCIONO! */}
             <div className="border rounded-full bg-white">
@@ -32,7 +42,7 @@ export default function NavBar() {
             <div className="flex flex-row justify-start items-center text-[#ffff] ps-14 gap-40 bg-[#4166e0] text-[#000] w-screen">
                 {/* Sobre nosotros */}
                 <DropdownMenu>
-                    <DropdownMenuTrigger>Sobre nosotros</DropdownMenuTrigger>
+                    <DropdownMenuTrigger onClick={() => scrollToSection('aboutus')}>Sobre nosotros</DropdownMenuTrigger>
                 </DropdownMenu>
 
                 {/* Marcas */}
@@ -41,11 +51,11 @@ export default function NavBar() {
                     <DropdownMenuContent className="text-[#ffff] bg-[#4166e0] max-h-48 overflow-y-auto">
                         <DropdownMenuSub>
                             {brands.map((options) => (
-                                <DropdownMenuItem key={options.id}>
-                                    <Link href={`/brands/${options.brand}`}>
+                                <Link href={`/brands/${options.brand}`} key={options.id}>
+                                    <DropdownMenuItem>
                                         {options.brand}
-                                    </Link>
-                                </DropdownMenuItem>
+                                    </DropdownMenuItem>
+                                </Link>
                             ))}
                         </DropdownMenuSub>
                     </DropdownMenuContent>
@@ -57,44 +67,90 @@ export default function NavBar() {
                         <DropdownMenuTrigger>Productos</DropdownMenuTrigger>
                     </Link>
                     <DropdownMenuContent className="text-[#ffff] bg-[#4166e0]">
-                        <DropdownMenuItem>
-                            <Link href={"/products"}>
+                        <Link href={"/products"}>
+                            <DropdownMenuItem>
                                 Todos
-                            </Link>
-                        </DropdownMenuItem>
+                            </DropdownMenuItem>
+                        </Link>
                         <DropdownMenuSub>
-                            <DropdownMenuSubTrigger>
-                                <Link href="/products/congelados">
-                                    Congelados
-                                </Link>
+                            <DropdownMenuSubTrigger onClick={() => {
+                                window.location.href = "/products/congelados"; // Redirige manualmente
+                            }}>
+                                Congelados
                             </DropdownMenuSubTrigger>
                             <DropdownMenuSubContent className="text-[#ffff] bg-[#4166e0]">
-                                <DropdownMenuItem>Papas congeladas</DropdownMenuItem>
-                                <DropdownMenuItem>Hamburguesas</DropdownMenuItem>
-                                <DropdownMenuItem>Frutas y Verduras</DropdownMenuItem>
+                                <Link href="/products/congelados/papas%20fritas">
+                                    <DropdownMenuItem>
+                                        Papas Fritas
+                                    </DropdownMenuItem>
+                                </Link>
+                                <Link href="/products/congelados/hamburguesas">
+                                    <DropdownMenuItem>
+                                        Hamburguesas
+                                    </DropdownMenuItem>
+                                </Link>
+                                <Link href="products/congelados/frutasyverduras">
+                                    <DropdownMenuItem>
+                                        Frutas y Verduras
+                                    </DropdownMenuItem>
+                                </Link>
                             </DropdownMenuSubContent>
                         </DropdownMenuSub>
                         <DropdownMenuSub>
-                            <DropdownMenuSubTrigger>
-                                <Link href="/products/refrigerados">
-                                    Refrigerados
-                                </Link>
+                            <DropdownMenuSubTrigger
+                                onClick={() => {
+                                    window.location.href = "/products/refrigerados"; // Redirige manualmente
+                                }}
+                            >
+                                Refrigerados
                             </DropdownMenuSubTrigger>
                             <DropdownMenuSubContent className="text-[#ffff] bg-[#4166e0]">
-                                <DropdownMenuItem>Aderezos</DropdownMenuItem>
-                                <DropdownMenuItem>Lacteos</DropdownMenuItem>
+                                <Link href="/products/refrigerados/aderezos">
+                                    <DropdownMenuItem>
+                                        Aderezos
+                                    </DropdownMenuItem>
+                                </Link>
+                                <Link href="/products/refrigerados/lacteos">
+                                    <DropdownMenuItem>
+                                        Lacteos
+                                    </DropdownMenuItem>
+                                </Link>
+                                <Link href="/products/refrigerados/quesos">
+                                    <DropdownMenuItem>
+                                        Quesos
+                                    </DropdownMenuItem>
+                                </Link>
+                                <Link href="/products/refrigerados/fiambres">
+                                    <DropdownMenuItem>
+                                        Fiambres
+                                    </DropdownMenuItem>
+                                </Link>
                             </DropdownMenuSubContent>
                         </DropdownMenuSub>
                         <DropdownMenuSub>
-                            <DropdownMenuSubTrigger>
-                                <Link href="/products/secos">
-                                    Secos
-                                </Link>
+                            <DropdownMenuSubTrigger
+                                onClick={() => {
+                                    window.location.href = "/products/secos"; // Redirige manualmente
+                                }}
+                            >
+                                Secos
                             </DropdownMenuSubTrigger>
                             <DropdownMenuSubContent className="text-[#ffff] bg-[#4166e0]">
-                                <DropdownMenuItem>Yerba Mate</DropdownMenuItem>
-                                <DropdownMenuItem>Panes</DropdownMenuItem>
-                                <DropdownMenuItem>Food Service</DropdownMenuItem>
+                                <Link href="/products/secos/yerba%20mate">
+                                    <DropdownMenuItem>
+                                        Yerba Mate
+                                    </DropdownMenuItem>
+                                </Link>
+                                <Link href="/products/secos/panes">
+                                    <DropdownMenuItem>
+                                        Panes
+                                    </DropdownMenuItem>
+                                </Link>
+                                <Link href="/products/secos/food%20service">
+                                    <DropdownMenuItem>
+                                        Food Service
+                                    </DropdownMenuItem>
+                                </Link>
                             </DropdownMenuSubContent>
                         </DropdownMenuSub>
                     </DropdownMenuContent>
@@ -104,23 +160,23 @@ export default function NavBar() {
                 <DropdownMenu>
                     <DropdownMenuTrigger>Clientes</DropdownMenuTrigger>
                     <DropdownMenuContent className="text-[#ffff] bg-[#4166e0]">
-                        <DropdownMenuItem>
-                            <Link href="https://www.instagram.com/madd.burgers/" target="_blank">
-                                Madd
-                            </Link>
-                        </DropdownMenuItem>
-                        <DropdownMenuSeparator />
-                        <DropdownMenuItem>
-                            <Link href="https://www.instagram.com/reina.burguesa/" target="_blank">
+                        <Link href="https://www.instagram.com/reina.burguesa/" target="_blank">
+                            <DropdownMenuItem className="cursor-pointer">
                                 Reina
-                            </Link>
-                        </DropdownMenuItem>
+                            </DropdownMenuItem>
+                        </Link>
                         <DropdownMenuSeparator />
-                        <DropdownMenuItem>
-                            <Link href="https://www.instagram.com/salvaje.burger/" target="_blank">
+                        <Link href="https://www.instagram.com/madd.burgers/" target="_blank">
+                            <DropdownMenuItem className="cursor-pointer">
+                                Madd
+                            </DropdownMenuItem>
+                        </Link>
+                        <DropdownMenuSeparator />
+                        <Link href="https://www.instagram.com/salvaje.burger/" target="_blank">
+                            <DropdownMenuItem className="cursor-pointer">
                                 Fogón Salvaje
-                            </Link>
-                        </DropdownMenuItem>
+                            </DropdownMenuItem>
+                        </Link>
                     </DropdownMenuContent>
                 </DropdownMenu>
 
@@ -149,19 +205,3 @@ export default function NavBar() {
         </div>
     );
 }
-
-
-{/* <DropdownMenuSub>
-                                <DropdownMenuSubTrigger>Milkaut</DropdownMenuSubTrigger>
-                                <DropdownMenuSubContent className="text-[#ffff] bg-[#4166e0]">
-                                    <DropdownMenuItem>Quesos</DropdownMenuItem>
-                                    <DropdownMenuItem>Manteca</DropdownMenuItem>
-                                </DropdownMenuSubContent>
-                            </DropdownMenuSub>
-                            <DropdownMenuSub>
-                                <DropdownMenuSubTrigger>NotCo</DropdownMenuSubTrigger>
-                                <DropdownMenuSubContent className="text-[#ffff] bg-[#4166e0]">
-                                    <DropdownMenuItem>Leche vegetal</DropdownMenuItem>
-                                    <DropdownMenuItem>Hamburguesas veganas</DropdownMenuItem>
-                                </DropdownMenuSubContent>
-                            </DropdownMenuSub> */}
