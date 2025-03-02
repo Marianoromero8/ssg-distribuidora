@@ -1,6 +1,7 @@
 'use client'
 import ProductCard from "@/app/common/product-card";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import { Link } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export interface Product {
@@ -59,11 +60,11 @@ export default function Commodity() {
                     </CarouselContent>
                 </Carousel>
             </section>
-            <a href="/products" className="flex justify-center hover:underline">
+            <Link href="/products" className="flex justify-center hover:underline">
                 <p>
                     Ver más
                 </p>
-            </a>
+            </Link>
         </div>
     )
 }
