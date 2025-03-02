@@ -208,7 +208,112 @@
         "width": 150,
         "website": "https://conosud-sa.com.ar/",
         "brand": "ConoSud",
-        "products": []
+        "products": [
+            {
+                "id": 61,
+                "image": "/products/Arandanos-IQF-Conosud-1-kg.webp",
+                "productName": "Arandanos Congelados - ConoSud",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "frutas"
+            },
+            {
+                "id": 62,
+                "image": "/products/Frutos-Rojos-IQF-Conosud-1-kg.webp",
+                "productName": "Mix Frutos Rojos Congelados - ConoSud",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "frutas"
+            },
+            {
+                "id": 63,
+                "image": "/products/Frutilla-IQF-Bolsa-1-kg.webp",
+                "productName": "Frutillas Congeladas - ConoSud",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "frutas"
+            },
+            {
+                "id": 64,
+                "image": "/products/Mix-Wok-de-Vegetales-IQF-Conosud-1-kg.webp",
+                "productName": "Mix Wok de Vegetales - ConoSud",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "verduras"
+            },
+            {
+                "id": 65,
+                "image": "/products/Mix-Jardinera-IQF-Conosud-1-kg.webp",
+                "productName": "Mix Jardinera - ConoSud",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "verduras"
+            },
+            {
+                "id": 66,
+                "image": "/products/Mix-para-Tarta-Espinaca-IQF-Conosud-1-kg.webp",
+                "productName": "Mix Tarta Espinaca - ConoSud",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "verduras"
+            },
+            {
+                "id": 67,
+                "image": "/products/Choclo-IQF-Conosud-1-kg.webp",
+                "productName": "Choco en Grano Congelado - ConoSud",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "verduras"
+            },
+            {
+                "id": 68,
+                "image": "/products/Espinaca-IQF-Conosud-1-kg.webp",
+                "productName": "Espinaca Congelada - ConoSud",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "verduras"
+            },
+            {
+                "id": 69,
+                "image": "/products/Champignon-IQF-Conosud-1-kg.webp",
+                "productName": "Champignones Feta - ConoSud",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "verduras"
+            },
+            {
+                "id": 70,
+                "image": "/products/Brocoli-IQF-Conosud-1-kg.webp",
+                "productName": "Brocoli Congelado - ConoSud",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "verduras"
+            },
+            {
+                "id": 71,
+                "image": "/products/Pimiento-IQF-Conosud-1-kg.webp",
+                "productName": "Morrón en Cubos Congelado - ConoSud",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "verduras"
+            },
+            {
+                "id": 72,
+                "image": "/products/Cebolla-IQF-Conosud-1-kg.webp",
+                "productName": "Cebolla en Cubo Congelado - ConoSud",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "verduras"
+            },
+            {
+                "id": 73,
+                "image": "/products/Arvejas-IQF-Conosud-1-kg.webp",
+                "productName": "Arvejas Congelado - ConoSud",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "verduras"
+            }
+        ]
     },
     {
         "id": 5,
@@ -336,7 +441,7 @@
             {
                 "id": 39,
                 "image": "/products/mccain noisettes.jpg",
-                "productName": "Noisette McCain",
+                "productName": "Noisette - McCain",
                 "presentation": "2.5 KG",
                 "category": "congelados",
                 "subcategory": "papas fritas"
@@ -344,7 +449,7 @@
             {
                 "id": 40,
                 "image": "/products/mccain smiles.jpg",
-                "productName": "Smiles McCain",
+                "productName": "Smiles - McCain",
                 "presentation": "1.5 KG",
                 "category": "congelados",
                 "subcategory": "papas fritas"
@@ -352,7 +457,7 @@
             {
                 "id": 41,
                 "image": "/products/premiummccain.png",
-                "productName": "Tradicionales McCain",
+                "productName": "Tradicionales - McCain",
                 "presentation": "2.25 KG",
                 "category": "congelados",
                 "subcategory": "papas fritas"
@@ -360,10 +465,18 @@
             {
                 "id": 42,
                 "image": "/products/arosdecebollamccain.png",
-                "productName": "Aros de Cebolla McCain",
+                "productName": "Aros de Cebolla - McCain",
                 "presentation": "1 KG",
                 "category": "congelados",
                 "subcategory": "papas fritas"
+            },
+            {
+                "id": 74,
+                "image": "/products/pulpapalta.png",
+                "productName": "Pulpa de Palta - McCain",
+                "presentation": "450 GR",
+                "category": "refrigerados",
+                "subcategory": "aderezos"
             }
         ]
     },
@@ -691,6 +804,24 @@
                 "presentation": "????",
                 "category": "refrigerados",
                 "subcategory": "fiambres"
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "src": "/alifAgroLogo.avif",
+        "height": 150,
+        "width": 150,
+        "website": "https://www.alifberries.com.ar/",
+        "brand": "Alif Agro",
+        "products": [
+            {
+                "id": 75,
+                "image": "/products/salifanana.webp",
+                "productName": "Anana Congelado - Alif Agro",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "frutas"
             }
         ]
     }

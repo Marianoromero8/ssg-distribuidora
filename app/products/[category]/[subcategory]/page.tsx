@@ -63,7 +63,7 @@ export default function SubcategoryPage() {
             </h1>
             <hr className="border border-[#4166e0]" />
             {loading ? (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ml-5 gap-8 mt-5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-20 gap-8 mt-8">
                     {Array.from({ length: 8 }).map((_, index) => (
                         <div key={index} className="flex flex-col items-center">
                             <Skeleton className="w-40 h-40 rounded-lg" />
@@ -73,7 +73,7 @@ export default function SubcategoryPage() {
                     ))}
                 </div>
             ) : subcategoryProducts.length > 0 ? (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ml-5 gap-8 mt-5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-20 gap-8 mt-8">
                     {subcategoryProducts.map((product) => (
                         <ProductCard
                             key={product.id}

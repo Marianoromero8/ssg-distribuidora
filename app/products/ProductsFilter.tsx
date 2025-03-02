@@ -6,6 +6,8 @@ interface Product {
     image: string;
     productName: string;
     presentation: string;
+    category: string;
+    subcategory: string;
 }
 
 interface Brand {

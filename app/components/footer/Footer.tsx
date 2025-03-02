@@ -44,7 +44,7 @@ export default function Footer() {
                     <h2 className="underline text-2xl">Menu</h2>
                     <p className="cursor-pointer hover:underline" onClick={() => scrollToSection('aboutus')}>Sobre Nosotros</p>
                     <p className="cursor-pointer hover:underline" onClick={() => scrollToSection('brands')}>Marcas</p>
-                    <p className="cursor-pointer hover:underline" onClick={() => scrollToSection('')}>Productos</p>
+                    <p className="cursor-pointer hover:underline" onClick={() => scrollToSection('products')}>Productos</p>
                     <p className="cursor-pointer hover:underline" onClick={() => scrollToSection('')}>Clientes</p>
                 </div>
             </div>

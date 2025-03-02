@@ -28,7 +28,7 @@ export default function NavBar() {
 
     return (
         <div className="flex flex-row justify-center w-full gap-5 bg-[#4166e0]">   {/*Le cambie el w-screen a w-full para que desaparezca el scroll para moverse a los costados FUNCIONO! */}
-            <div className="border rounded-full bg-white">
+            <div className="bg-white">
                 <Link href='/'>
                     <Image
                         src="/Distribuidora-SSG_Logo-Negro_2024.svg"
@@ -89,9 +89,14 @@ export default function NavBar() {
                                         Hamburguesas
                                     </DropdownMenuItem>
                                 </Link>
-                                <Link href="products/congelados/frutasyverduras">
+                                <Link href="/products/congelados/frutas">
                                     <DropdownMenuItem>
-                                        Frutas y Verduras
+                                        Frutas
+                                    </DropdownMenuItem>
+                                </Link>
+                                <Link href="/products/congelados/verduras">
+                                    <DropdownMenuItem>
+                                        Verduras
                                     </DropdownMenuItem>
                                 </Link>
                             </DropdownMenuSubContent>

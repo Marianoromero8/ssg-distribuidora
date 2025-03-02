@@ -1,6 +1,6 @@
 import ProductCard from "@/app/common/product-card"
 import { useEffect, useState } from "react"
-import { FilterBrands } from "./filtersBrands"
+import { BrandFilter } from "./BrandFilter"
 
 interface Brand {
     id: number;
@@ -40,10 +40,6 @@ export default function Products() {
             });
     }, [])
 
-    // const handleFilterChange = (filtered: Product[]) => {
-    //     setFilteredProducts(filtered);
-    // };
-
     const handleFilterChange = (filtered: Product[]) => {
         setFilteredProducts((prev) =>
             JSON.stringify(prev) !== JSON.stringify(filtered) ? filtered : prev
@@ -58,8 +54,8 @@ export default function Products() {
                 </div>
             </div>
             <hr className="border border-[#4166e0] " />
-            <FilterBrands brands={brands} onFilterChange={handleFilterChange} />
-            <div id="products" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ml-5 gap-8">
+            <BrandFilter brands={brands} onFilterChange={handleFilterChange} />
+            <div id="products" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-20 gap-8">
                 {filteredProducts.map((product) => ( //Para que figuren de forma desordenada  {filteredProducts.sort(() => Math.random() - 0.5).map((product) => (
                     <ProductCard
                         key={product.id}
