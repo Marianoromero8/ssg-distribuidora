@@ -2,6 +2,7 @@
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
+import { Swiper as SwiperClass } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -9,17 +10,13 @@ import "swiper/css/navigation";
 export default function Home() {
     const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
 
-    const handleSlideChange = (swiper: any) => {
-        videoRefs.current.forEach((video, index) => {
-            if (video) {
-                if (index === swiper.activeIndex) {
-                    video.play().catch((err) => console.error("Error al reproducir:", err));
-                } else {
-                    video.pause();
-                }
-            }
-        });
+    const handleSlideChange = (swiper: SwiperClass) => {
+        const activeVideo = videoRefs.current[swiper.activeIndex];
+        if (activeVideo) {
+            activeVideo.play().catch((err) => console.error("Error al reproducir:", err));
+        }
     };
+
 
     return (
         <div className="w-full h-screen flex justify-center items-center bg-transparent my-8">
