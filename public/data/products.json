@@ -1,44 +1,828 @@
 [
     {
         "id": 1,
-        "image": "/Nuggets.jpeg",
-        "productName": "Nuggets",
-        "presentation": "Bolsa 1kg",
-        "brand": "Tiernis"
+        "src": "/tonadita.jpeg",
+        "height": 150,
+        "width": 150,
+        "brand": "Tonadita",
+        "website": "https://www.tonadita.com/",
+        "products": [
+            {
+                "id": 7,
+                "image": "/products/_clasica_5kg_tonadita.png",
+                "productName": "Manteca",
+                "presentation": "Caja x 5kg",
+                "category": "refrigerados",
+                "subcategory": "lacteos"
+            },
+            {
+                "id": 8,
+                "image": "/products/chantilly_tonadita.png",
+                "productName": "Crema Chantilly",
+                "presentation": "250 GR",
+                "category": "refrigerados",
+                "subcategory": "lacteos"
+            },
+            {
+                "id": 9,
+                "image": "/products/bd_crema_clasica_200_tonadita.png",
+                "productName": "Crema Clasica",
+                "presentation": "200 GR",
+                "category": "refrigerados",
+                "subcategory": "lacteos"
+            },
+            {
+                "id": 10,
+                "image": "/products/dipCheddar_3kg_tonadita.png",
+                "productName": "Dip Cheddar",
+                "presentation": "3 KG",
+                "category": "refrigerados",
+                "subcategory": "quesos"
+            },
+            {
+                "id": 11,
+                "image": "/products/fetas_10_azul_tonadita.png",
+                "productName": "Fetas Queso Azul",
+                "presentation": "1 x 10",
+                "category": "refrigerados",
+                "subcategory": "quesos"
+            },
+            {
+                "id": 12,
+                "image": "/products/fetas_cheddar_tonadita.png",
+                "productName": "Fetas Queso Cheddar",
+                "presentation": "1 x 10",
+                "category": "refrigerados",
+                "subcategory": "quesos"
+            },
+            {
+                "id": 13,
+                "image": "/products/fetas_168_mozzarella_tonadita.png",
+                "productName": "Fetas Queso Mozzarella",
+                "presentation": "1 x 168",
+                "category": "refrigerados",
+                "subcategory": "quesos"
+            },
+            {
+                "id": 14,
+                "image": "/products/fetas_cheddar_168_tonadita.png",
+                "productName": "Fetas Queso Cheddar",
+                "presentation": "1 x 168",
+                "category": "refrigerados",
+                "subcategory": "quesos"
+            },
+            {
+                "id": 15,
+                "image": "/products/manteca_clasica_100_tonadita.png",
+                "productName": "Manteca Clasica",
+                "presentation": "100 GR",
+                "category": "refrigerados",
+                "subcategory": "lacteos"
+            },
+            {
+                "id": 16,
+                "image": "/products/manteca_clasica_200_tonadita.png",
+                "productName": "Manteca Clasica",
+                "presentation": "200 GR",
+                "category": "refrigerados",
+                "subcategory": "lacteos"
+            }
+        ]
     },
     {
         "id": 2,
-        "image": "/burguerTiernis.jpeg",
-        "productName": "Hamburguesa",
-        "presentation": "Caja 20 x 4",
-        "brand": "Tiernis"
+        "src": "/milkaut.jpeg",
+        "height": 150,
+        "width": 150,
+        "website": "https://milkautprofesional.com.ar/",
+        "brand": "Milkaut",
+        "products": [
+            {
+                "id": 3,
+                "image": "/products/cremas-44-porciento-milkaut.webp",
+                "productName": "Crema de Leche 44%",
+                "presentation": "5 L",
+                "category": "refrigerados",
+                "subcategory": "lacteos"
+            },
+            {
+                "id": 4,
+                "image": "/products/crematto_F_milkaut.png",
+                "productName": "Crematto Clasico Milkaut",
+                "presentation": "3.5 KG",
+                "category": "refrigerados",
+                "subcategory": "lacteos"
+            },
+            {
+                "id": 17,
+                "image": "/products/balde-clasico-milkaut.webp",
+                "productName": "Dulce de Leche - Clasico",
+                "presentation": "10 KG"
+            },
+            {
+                "id": 18,
+                "image": "/products/balde-repostero_milkaut.webp",
+                "productName": "Dulce de Leche - Repostero",
+                "presentation": "10 KG"
+            },
+            {
+                "id": 19,
+                "image": "/products/cheddar_F_milkaut.webp",
+                "productName": "Cheddar Milkaut",
+                "presentation": "3.5 KG",
+                "category": "refrigerados",
+                "subcategory": "quesos"
+            },
+            {
+                "id": 20,
+                "image": "/products/crema_frente_T_milkaut.webp",
+                "productName": "Crematto Clasico Milkaut",
+                "presentation": "1.5 KG",
+                "category": "refrigerados",
+                "subcategory": "lacteos"
+            },
+            {
+                "id": 21,
+                "image": "/products/crema-39-milkaut.webp",
+                "productName": "Manteca Clasica",
+                "presentation": "200 GR",
+                "category": "refrigerados",
+                "subcategory": "lacteos"
+            },
+            {
+                "id": 22,
+                "image": "/products/lechemilkautdescremada.jpeg",
+                "productName": "Leche Descremada",
+                "presentation": "1 L",
+                "category": "refrigerados",
+                "subcategory": "lacteos"
+            },
+            {
+                "id": 23,
+                "image": "/products/lechemilkautentera.jpeg",
+                "productName": "Leche Entera",
+                "presentation": "1 L",
+                "category": "refrigerados",
+                "subcategory": "lacteos"
+            },
+            {
+                "id": 24,
+                "image": "/products/manteca_5kg_milkaut.webp",
+                "productName": "Manteca Clasica",
+                "presentation": "5 KG",
+                "category": "refrigerados",
+                "subcategory": "lacteos"
+            },
+            {
+                "id": 25,
+                "image": "/products/Pack_queso-fetas2_Cheddar_milkaut.webp",
+                "productName": "Fetas Queso Cheddar",
+                "presentation": "1 x 192",
+                "category": "refrigerados",
+                "subcategory": "quesos"
+            }
+        ]
     },
     {
         "id": 3,
-        "image": "/quesoMilkaut.webp",
-        "productName": "Queso",
-        "presentation": "Caja 20",
-        "brand": "Milkaut"
+        "src": "/seda.jpeg",
+        "height": 150,
+        "width": 150,
+        "website": "https://www.sedasa.com.ar/",
+        "brand": "Seda",
+        "products": [
+            {
+                "id": 38,
+                "image": "/products/aceiteSEDA.webp",
+                "productName": "Alto Oleico - SEDA",
+                "presentation": "10 L",
+                "category": "secos",
+                "subcategory": "food service"
+            }
+        ]
     },
     {
         "id": 4,
-        "image": "/Dulce-De-Leche-Milkaut-400-Gr-_1.webp",
-        "productName": "Dulce de Leche",
-        "presentation": "Caja x 10",
-        "brand": "Milkaut"
+        "src": "/conosud.jpeg",
+        "height": 150,
+        "width": 150,
+        "website": "https://conosud-sa.com.ar/",
+        "brand": "ConoSud",
+        "products": [
+            {
+                "id": 61,
+                "image": "/products/Arandanos-IQF-Conosud-1-kg.webp",
+                "productName": "Arandanos Congelados - ConoSud",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "frutas"
+            },
+            {
+                "id": 62,
+                "image": "/products/Frutos-Rojos-IQF-Conosud-1-kg.webp",
+                "productName": "Mix Frutos Rojos Congelados - ConoSud",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "frutas"
+            },
+            {
+                "id": 63,
+                "image": "/products/Frutilla-IQF-Bolsa-1-kg.webp",
+                "productName": "Frutillas Congeladas - ConoSud",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "frutas"
+            },
+            {
+                "id": 64,
+                "image": "/products/Mix-Wok-de-Vegetales-IQF-Conosud-1-kg.webp",
+                "productName": "Mix Wok de Vegetales - ConoSud",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "verduras"
+            },
+            {
+                "id": 65,
+                "image": "/products/Mix-Jardinera-IQF-Conosud-1-kg.webp",
+                "productName": "Mix Jardinera - ConoSud",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "verduras"
+            },
+            {
+                "id": 66,
+                "image": "/products/Mix-para-Tarta-Espinaca-IQF-Conosud-1-kg.webp",
+                "productName": "Mix Tarta Espinaca - ConoSud",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "verduras"
+            },
+            {
+                "id": 67,
+                "image": "/products/Choclo-IQF-Conosud-1-kg.webp",
+                "productName": "Choco en Grano Congelado - ConoSud",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "verduras"
+            },
+            {
+                "id": 68,
+                "image": "/products/Espinaca-IQF-Conosud-1-kg.webp",
+                "productName": "Espinaca Congelada - ConoSud",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "verduras"
+            },
+            {
+                "id": 69,
+                "image": "/products/Champignon-IQF-Conosud-1-kg.webp",
+                "productName": "Champignones Feta - ConoSud",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "verduras"
+            },
+            {
+                "id": 70,
+                "image": "/products/Brocoli-IQF-Conosud-1-kg.webp",
+                "productName": "Brocoli Congelado - ConoSud",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "verduras"
+            },
+            {
+                "id": 71,
+                "image": "/products/Pimiento-IQF-Conosud-1-kg.webp",
+                "productName": "Morrón en Cubos Congelado - ConoSud",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "verduras"
+            },
+            {
+                "id": 72,
+                "image": "/products/Cebolla-IQF-Conosud-1-kg.webp",
+                "productName": "Cebolla en Cubo Congelado - ConoSud",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "verduras"
+            },
+            {
+                "id": 73,
+                "image": "/products/Arvejas-IQF-Conosud-1-kg.webp",
+                "productName": "Arvejas Congelado - ConoSud",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "verduras"
+            }
+        ]
     },
     {
         "id": 5,
-        "image": "/boogysBurguers.jpeg",
-        "productName": "Hambuerguesas",
-        "presentation": "Caja - 10 x 2",
-        "brand": "Boogys"
+        "src": "/boogys.jpeg",
+        "height": 150,
+        "width": 150,
+        "website": "",
+        "brand": "Boogys",
+        "products": [
+            {
+                "id": 5,
+                "image": "/boogysBurguers.jpeg",
+                "productName": "Hamburguesas",
+                "presentation": "Unidades por bulto: 20 x 2u"
+            }
+        ]
     },
     {
         "id": 6,
-        "image": "/Hero-1-NotBurger-95g.webp",
-        "productName": "Hambuerguesas",
-        "presentation": "Caja - 20 x 2",
-        "brand": "NotCo"
+        "src": "/lacomarca.jpeg",
+        "height": 150,
+        "width": 150,
+        "website": "",
+        "brand": "La Comarca",
+        "products": []
+    },
+    {
+        "id": 7,
+        "src": "/ranchoalto.jpeg",
+        "height": 150,
+        "width": 150,
+        "website": "https://ranchoalto.com.ar/",
+        "brand": "Rancho Alto",
+        "products": []
+    },
+    {
+        "id": 8,
+        "src": "/tiernis.jpeg",
+        "height": 150,
+        "width": 150,
+        "website": "",
+        "brand": "Tiernis",
+        "products": [
+            {
+                "id": 1,
+                "image": "/Nuggets.jpeg",
+                "productName": "Nuggets",
+                "presentation": "Bolsa 1kg"
+            },
+            {
+                "id": 2,
+                "image": "/burguerTiernis.jpeg",
+                "productName": "Hamburguesa",
+                "presentation": "Caja 20 x 4"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "src": "/granjatresarroyos.jpeg",
+        "height": 150,
+        "width": 150,
+        "website": "https://www.grupogta.com.ar/marcas/granja-tres-arroyos",
+        "brand": "Granja Tres Arroyos",
+        "products": []
+    },
+    {
+        "id": 10,
+        "src": "/benidorm.jpeg",
+        "height": 150,
+        "width": 150,
+        "website": "https://benidorm.com.ar/",
+        "brand": "Benidorm",
+        "products": [
+            {
+                "id": 26,
+                "image": "/products/cheddar-500cc-benidorm.png",
+                "productName": "Benidorm Cheddar",
+                "presentation": "500 ML",
+                "category": "refrigerados",
+                "subcategory": "aderezos"
+            },
+            {
+                "id": 27,
+                "image": "/products/ketchup-500cc-benidorm.png",
+                "productName": "Benidorm Ketchup",
+                "presentation": "500 ML",
+                "category": "refrigerados",
+                "subcategory": "aderezos"
+            },
+            {
+                "id": 28,
+                "image": "/products/mayonesa-500cc-benidorm.png",
+                "productName": "Benidorm Mayonesa",
+                "presentation": "500 ML",
+                "category": "refrigerados",
+                "subcategory": "aderezos"
+            },
+            {
+                "id": 29,
+                "image": "/products/mostaza-500cc-benidorm.png",
+                "productName": "Benidorm Mostaza",
+                "presentation": "500 ML",
+                "category": "refrigerados",
+                "subcategory": "aderezos"
+            },
+            {
+                "id": 30,
+                "image": "/products/mayonesa2900-benidorm.jpg",
+                "productName": "Benidorm Mayonesa",
+                "presentation": "2.9 KG",
+                "category": "refrigerados",
+                "subcategory": "aderezos"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "src": "/mccain.jpeg",
+        "height": 150,
+        "width": 150,
+        "website": "https://mccain.com.ar/",
+        "brand": "McCain",
+        "products": [
+            {
+                "id": 39,
+                "image": "/products/mccain noisettes.jpg",
+                "productName": "Noisette - McCain",
+                "presentation": "2.5 KG",
+                "category": "congelados",
+                "subcategory": "papas fritas"
+            },
+            {
+                "id": 40,
+                "image": "/products/mccain smiles.jpg",
+                "productName": "Smiles - McCain",
+                "presentation": "1.5 KG",
+                "category": "congelados",
+                "subcategory": "papas fritas"
+            },
+            {
+                "id": 41,
+                "image": "/products/premiummccain.png",
+                "productName": "Tradicionales - McCain",
+                "presentation": "2.25 KG",
+                "category": "congelados",
+                "subcategory": "papas fritas"
+            },
+            {
+                "id": 42,
+                "image": "/products/arosdecebollamccain.png",
+                "productName": "Aros de Cebolla - McCain",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "papas fritas"
+            },
+            {
+                "id": 74,
+                "image": "/products/pulpapalta.png",
+                "productName": "Pulpa de Palta - McCain",
+                "presentation": "450 GR",
+                "category": "refrigerados",
+                "subcategory": "aderezos"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "src": "/donbasilio.jpeg",
+        "height": 150,
+        "width": 150,
+        "website": "https://donbasilio.com/",
+        "brand": "Don Basilio",
+        "products": [
+            {
+                "id": 31,
+                "image": "/products/don_basilio_500gr.jpg",
+                "productName": "Yerba Tradicional - Don Basilio",
+                "presentation": "500 GR",
+                "category": "secos",
+                "subcategory": "yerba mate"
+            },
+            {
+                "id": 32,
+                "image": "/products/especial_donbasilio_500gr.jpg",
+                "productName": "Yerba Especial - Don Basilio",
+                "presentation": "500 GR",
+                "category": "secos",
+                "subcategory": "yerba mate"
+            },
+            {
+                "id": 33,
+                "image": "/products/suave_donbasilio_500gr.jpg",
+                "productName": "Yerba Suave - Don Basilio",
+                "presentation": "500 GR",
+                "category": "secos",
+                "subcategory": "yerba mate"
+            },
+            {
+                "id": 34,
+                "image": "/products/terere_donbasilio_500gr.jpg",
+                "productName": "Yerba Terere - Don Basilio",
+                "presentation": "500 GR",
+                "category": "secos",
+                "subcategory": "yerba mate"
+            },
+            {
+                "id": 35,
+                "image": "/products/matecocido_donbasilio_x25.jpg",
+                "productName": "Mate Cocido - Don Basilio",
+                "presentation": "1 x 25",
+                "category": "secos",
+                "subcategory": "yerba mate"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "src": "/barraza.jpeg",
+        "height": 150,
+        "width": 150,
+        "website": "https://web.lacteosbarraza.com.ar/",
+        "brand": "Barraza",
+        "products": [
+            {
+                "id": 47,
+                "image": "/products/muzzarella_cilindrica_3k.jpg",
+                "productName": "Muzzarella Cilindrica Barraza",
+                "presentation": "???",
+                "category": "refrigerados",
+                "subcategory": "quesos"
+            },
+            {
+                "id": 48,
+                "image": "/products/Muzzarella_industrial_10kg.jpg",
+                "productName": "Muzzarella Horma Barraza",
+                "presentation": "???",
+                "category": "refrigerados",
+                "subcategory": "quesos"
+            },
+            {
+                "id": 49,
+                "image": "/products/Provoleta.jpg",
+                "productName": "Provoleta Barraza",
+                "presentation": "???",
+                "category": "refrigerados",
+                "subcategory": "quesos"
+            },
+            {
+                "id": 50,
+                "image": "/products/Queso_Azul.jpg",
+                "productName": "Queso Azul Barraza",
+                "presentation": "???",
+                "category": "refrigerados",
+                "subcategory": "quesos"
+            },
+            {
+                "id": 51,
+                "image": "/products/Queso_Cremoso_Horma.jpg",
+                "productName": "Queso Cremoso Barraza",
+                "presentation": "???",
+                "category": "refrigerados",
+                "subcategory": "quesos"
+            },
+            {
+                "id": 52,
+                "image": "/products/tybo.jpg",
+                "productName": "Queso Tybo Barraza",
+                "presentation": "???",
+                "category": "refrigerados",
+                "subcategory": "quesos"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "src": "/notco.jpeg",
+        "height": 150,
+        "width": 150,
+        "website": "https://notco.com/ar/",
+        "brand": "NotCo",
+        "products": [
+            {
+                "id": 6,
+                "image": "/products/NotChicken-Crispy.webp",
+                "productName": "Not Chicken Crispy",
+                "presentation": "1 x 2 unidades 100GR",
+                "category": "congelados",
+                "subcategory": "rebozado"
+            },
+            {
+                "id": 36,
+                "image": "/products/NotCo-80grx4.webp",
+                "productName": "Not Burguer",
+                "presentation": "1 x 4 unidades 80GR",
+                "category": "congelados",
+                "subcategory": "hamburguesas"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "src": "/g.jpeg",
+        "height": 150,
+        "width": 150,
+        "website": "",
+        "brand": "Gallardo",
+        "products": [
+            {
+                "id": 37,
+                "image": "/products/triturado-tomate.jpg",
+                "productName": "Tomate Triturado - Gallardo",
+                "presentation": "8 KG",
+                "category": "secos",
+                "subcategory": "food service"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "src": "/simplot.jpeg",
+        "height": 150,
+        "width": 150,
+        "website": "https://www.simplotfoods.com/latam",
+        "brand": "Simplot",
+        "products": [
+            {
+                "id": 43,
+                "image": "/products/simplot tradicionales.jpg",
+                "productName": "Tradicional Simplot",
+                "presentation": "2.5 KG",
+                "category": "congelados",
+                "subcategory": "papas fritas"
+            },
+            {
+                "id": 44,
+                "image": "/products/simplot extracrunch fino.jpg",
+                "productName": "Extra Crunch Corte Fino Simplot",
+                "presentation": "2.5 KG",
+                "category": "congelados",
+                "subcategory": "papas fritas"
+            },
+            {
+                "id": 45,
+                "image": "/products/simplot extracrunch tradicional.jpg",
+                "productName": "Extra Crunch Simplot",
+                "presentation": "2.5 KG",
+                "category": "congelados",
+                "subcategory": "papas fritas"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "src": "/s.jpeg",
+        "height": 150,
+        "width": 150,
+        "website": "",
+        "brand": "S",
+        "products": []
+    },
+    {
+        "id": 18,
+        "src": "/lambweston.jpg",
+        "height": 150,
+        "width": 150,
+        "website": "https://www.lambweston.com.ar/",
+        "brand": "LambWeston",
+        "products": [
+            {
+                "id": 46,
+                "image": "/products/baston-tradicional-2.5-kg-lamb-weston.webp",
+                "productName": "Tradicionales Lambweston",
+                "presentation": "2.5 KG",
+                "category": "congelados",
+                "subcategory": "papas fritas"
+            },
+            {
+                "id": 58,
+                "image": "/products/baston-fino-2.5kg-lamb-weston.webp",
+                "productName": "Corte Fino Lambweston",
+                "presentation": "2.5 KG",
+                "category": "congelados",
+                "subcategory": "papas fritas"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "src": "/tapalque.jpeg",
+        "height": 150,
+        "width": 150,
+        "website": "https://tapalquealimentos.com.ar/",
+        "brand": "Tapalque",
+        "products": [
+            {
+                "id": 55,
+                "image": "/products/Fiambre-cocido-de-paleta-cuadrado.jpg",
+                "productName": "Cocido de Paleta Tapalque",
+                "presentation": "????",
+                "category": "refrigerados",
+                "subcategory": "fiambres"
+            },
+            {
+                "id": 56,
+                "image": "/products/jamoncocido.jpg",
+                "productName": "Jamon Cocido Tapalque",
+                "presentation": "????",
+                "category": "refrigerados",
+                "subcategory": "fiambres"
+            },
+            {
+                "id": 57,
+                "image": "/products/Panceta-Ahumada-Con-Cuero.jpg",
+                "productName": "Panceta Ahumada Tapalque",
+                "presentation": "????",
+                "category": "refrigerados",
+                "subcategory": "fiambres"
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "src": "/rapipap-550x270.jpg",
+        "height": 150,
+        "width": 150,
+        "website": "",
+        "brand": "Rapipap",
+        "products": [
+            {
+                "id": 53,
+                "image": "/products/RAPIPAP-BASTON-x2500.webp",
+                "productName": "Tradicionales Rapipap",
+                "presentation": "2.5 KG",
+                "category": "congelados",
+                "subcategory": "papas fritas"
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "src": "/puntadeagua.jpg",
+        "height": 150,
+        "width": 150,
+        "website": "https://www.puntadelagua.com.ar/",
+        "brand": "Punta del Agua",
+        "products": [
+            {
+                "id": 54,
+                "image": "/products/HORMA-SARDO-400x400.png",
+                "productName": "Sardo Punta del Agua",
+                "presentation": "????",
+                "category": "refrigerados",
+                "subcategory": "quesos"
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "src": "/elartesano.jpeg",
+        "height": 150,
+        "width": 150,
+        "website": "https://www.productoselartesano.com.ar/",
+        "brand": "El Artesano",
+        "products": [
+            {
+                "id": 59,
+                "image": "/products/crudo.png",
+                "productName": "Jamon Crudo El Artesano",
+                "presentation": "????",
+                "category": "refrigerados",
+                "subcategory": "fiambres"
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "src": "/lario logos.png",
+        "height": 150,
+        "width": 150,
+        "website": "https://lario.com.ar/",
+        "brand": "Lario",
+        "products": [
+            {
+                "id": 60,
+                "image": "/products/cantimpalo.png",
+                "productName": "Cantimpalo Lario",
+                "presentation": "????",
+                "category": "refrigerados",
+                "subcategory": "fiambres"
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "src": "/alifAgroLogo.avif",
+        "height": 150,
+        "width": 150,
+        "website": "https://www.alifberries.com.ar/",
+        "brand": "Alif Agro",
+        "products": [
+            {
+                "id": 75,
+                "image": "/products/salifanana.webp",
+                "productName": "Anana Congelado - Alif Agro",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "frutas"
+            }
+        ]
     }
 ]

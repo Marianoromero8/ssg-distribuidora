@@ -9,6 +9,9 @@ export default {
   ],
   theme: {
   	extend: {
+		fontFamily: {
+			ubuntu: "var(--font-ubuntu)",
+		  },
   		colors: {
 			  background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

@@ -1,66 +1,93 @@
 import ProductCard from "@/app/common/product-card"
 import { useEffect, useState } from "react"
-import { FilterBrands } from "./filtersBrands"
-import Image from "next/image";
-import Link from "next/link";
+import { BrandFilter } from "./BrandFilter"
+import { Skeleton } from "@/components/ui/skeleton";
 
+interface Brand {
+    id: number;
+    src: string;
+    height: number;
+    width: number;
+    brand: string;
+    products: Product[];
+}
 export interface Product {
     id: string | number;
     image: string;
     productName: string;
     presentation: string;
-    brand: string;
 }
 
 export default function Products() {
 
-    const [products, setProducts] = useState<Product[]>([])
+    const [brands, setBrands] = useState<Brand[]>([])
     const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
+    const [loading, setLoading] = useState(true);
 
 
     useEffect(() => {
         fetch('/data/products.json')
-            .then((response) => response.json())
-            .then((data) => {
-                setProducts(data)
-                setFilteredProducts(data);
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then((data: Brand[]) => {
+                setBrands(data);
+                setFilteredProducts(data?.flatMap((brand) => brand.products) || []);
+            })
+            .catch((error) => {
+                console.error('Error fetching data:', error);
+            })
+            .finally(() => {
+                setLoading(false); // Asegurarse de que loading se actualice
             })
     }, [])
 
     const handleFilterChange = (filtered: Product[]) => {
-        setFilteredProducts(filtered);
+        setFilteredProducts((prev) =>
+            JSON.stringify(prev) !== JSON.stringify(filtered) ? filtered : prev
+        );
     };
 
     return (
-        <div className="px-5 sm:px-10" >
-            <div className=" flex flex-row justify-start gap-60">
-                <div>
-                    <Link href="/">
-                        <Image
-                            src="/Distribuidora-SSG_Logo-Negro_2024.svg"
-                            width={200}
-                            height={150}
-                            alt="Logo"
-                            className="pt-3"
-                        />
-                    </Link>
-                </div >
-                <div className=" pt-5 text-5xl font-bold text-[#f17900ec]">
+        <div className="px-5 sm:px-10 mb-8" >
+            <div className=" flex flex-row justify-center gap-60">
+                <div className=" pt-5 text-5xl font-bold text-[#4166e0] p-5">
                     <h1>Productos</h1>
                 </div>
             </div>
-            <hr className="border border-[#f17900ec] " />
-            <FilterBrands products={products} onFilterChange={handleFilterChange} />
-            <div id="products" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ml-5 gap-8">
-                {filteredProducts.map((product) => (
-                    <ProductCard
-                        key={product.id}
-                        image={product.image}
-                        productName={product.productName}
-                        presentation={product.presentation}
-                    />
-                ))}
-            </div>
+            <hr className="border border-[#4166e0] " />
+            <BrandFilter brands={brands} onFilterChange={handleFilterChange} />
+            {loading ? (
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-20 gap-8 mt-8">
+                    {Array.from({ length: 8 }).map((_, index) => (
+                        <div key={index} className="flex flex-col items-center">
+                            <Skeleton className="w-40 h-40 rounded-lg" />
+                            <Skeleton className="w-32 h-6 mt-3" />
+                            <Skeleton className="w-24 h-4 mt-2" />
+                        </div>
+                    ))}
+                </div>
+            ) : filteredProducts.length > 0 ? (
+                <div id="products" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-20 gap-8">
+                    {filteredProducts.map((product) => ( //Para que figuren de forma desordenada  {filteredProducts.sort(() => Math.random() - 0.5).map((product) => (
+                        <ProductCard
+                            key={product.id}
+                            image={product.image || '/Distribuidora-SSG_Logo-Blanco_2024.svg'}
+                            productName={product.productName}
+                            presentation={product.presentation}
+                            alt={product.productName}
+                        />
+                    ))}
+                </div>
+            ) : (
+                <p className='text-[#4166e0] text-2xl flex justify-center p-10'>
+                    No hay productos en esta subcategoría.
+                </p>
+            )
+            }
         </div >
     )
 }

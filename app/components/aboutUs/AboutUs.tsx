@@ -2,29 +2,25 @@ import {
     Carousel,
     CarouselContent,
     CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
 } from "@/components/ui/carousel"
 import Image from "next/image"
 
 export default function AboutUs() {
     return (
-        <div id="aboutus" className="flex flex-col md:flex-row text-[#f17900ec] gap-12 p-6 w-full overflow-auto">
+        <div id="aboutus" className="flex flex-col md:flex-row text-[#4166e0] gap-12 p-6 w-full overflow-auto">
             <div className="flex flex-col gap-5 w-full md:w-1/2">
                 <h2 className="flex justify-center text-4xl">Sobre Nosotros</h2>
-                <hr className="border border-[#f17900ec]" />
-                <div className="flex justify-center mt-8 items-center">
+                <hr className="border border-[#4166e0]" />
+                <section className="flex justify-center mt-8">
                     <Carousel>
-                        <CarouselContent className="flex items-center gap-4">
-                            <CarouselItem ><Image src="/Distribuidora-SSG_Logo-Blanco_2024.svg" width={600} height={300} alt="Logo"></Image></CarouselItem>
-                            <CarouselItem ><Image src="/Distribuidora-SSG_Logo-Negro_2024.svg" width={600} height={300} alt="Logo"></Image></CarouselItem>
-                            <CarouselItem ><Image src="/Distribuidora-SSG_Logo-Blanco_2024.svg" width={600} height={300} alt="Logo"></Image></CarouselItem>
-                            <CarouselItem ><Image src="/Distribuidora-SSG_Logo-Negro_2024.svg" width={600} height={300} alt="Logo"></Image></CarouselItem>
+                        <CarouselContent className="flex items-center gap-4 mx-4">
+                            <CarouselItem className="flex justify-center"><Image src="/Distribuidora-SSG_Logo-Blanco_2024.svg" width={600} height={300} alt="Logo" /></CarouselItem>
+                            <CarouselItem className="flex justify-center"><Image src="/Distribuidora-SSG_Logo-Negro_2024.svg" width={600} height={300} alt="Logo" /></CarouselItem>
+                            <CarouselItem className="flex justify-center"><Image src="/Distribuidora-SSG_Logo-Blanco_2024.svg" width={600} height={300} alt="Logo" /></CarouselItem>
+                            <CarouselItem className="flex justify-center"><Image src="/Distribuidora-SSG_Logo-Negro_2024.svg" width={600} height={300} alt="Logo" /></CarouselItem>
                         </CarouselContent>
-                        <CarouselPrevious />
-                        <CarouselNext />
                     </Carousel>
-                </div>
+                </section>
             </div>
             <div className="flex flex-col pt-8 md:pt-24 gap-5 text-sm w-full md:w-1/2">
                 <p>

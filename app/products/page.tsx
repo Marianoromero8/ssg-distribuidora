@@ -1,9 +1,8 @@
 'use client'
-// import Products from "./Products";
+import Products from "./Products";
 
 export default function Page() {
     return (
-        <div></div>
-        // <Products />
+        <Products />
     )
 }
