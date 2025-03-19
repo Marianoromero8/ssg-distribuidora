@@ -54,7 +54,7 @@ export default function SubcategoryPage() {
         if (subcategory) {
             fetchProducts();
         }
-    }, [subcategory]);
+    }, [category, subcategory]);
 
     return (
         <div className='mb-8'>

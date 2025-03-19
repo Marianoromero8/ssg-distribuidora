@@ -9,31 +9,17 @@ import "swiper/css/navigation";
 export default function Home() {
     const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    const video = entry.target as HTMLVideoElement;
-                    if (entry.isIntersecting) {
-                        video.play().catch((err) => console.error("Error al reproducir:", err));
-                    } else {
-                        video.pause();
-                    }
-                });
-            },
-            { threshold: 0.75 }
-        );
-
-        videoRefs.current.forEach((video) => {
-            if (video) observer.observe(video);
+    const handleSlideChange = (swiper: any) => {
+        videoRefs.current.forEach((video, index) => {
+            if (video) {
+                if (index === swiper.activeIndex) {
+                    video.play().catch((err) => console.error("Error al reproducir:", err));
+                } else {
+                    video.pause();
+                }
+            }
         });
-
-        return () => {
-            videoRefs.current.forEach((video) => {
-                if (video) observer.unobserve(video);
-            });
-        };
-    }, []);
+    };
 
     return (
         <div className="w-full h-screen flex justify-center items-center bg-transparent my-8">
@@ -45,35 +31,33 @@ export default function Home() {
                 navigation={true}
                 modules={[Pagination, Navigation]}
                 className="w-full h-full"
+                onSlideChange={handleSlideChange}
             >
-                <SwiperSlide className="w-full h-full flex items-center justify-center">
+                <SwiperSlide>
                     <video
-                        ref={(el) => { videoRefs.current[0] = el }}
+                        ref={(el) => { videoRefs.current[0] = el; }}
                         src="/videos/tonaditavideo.mp4"
                         muted
-                        autoPlay
                         playsInline
                         loop
                         className="w-full h-full object-contain"
                     />
                 </SwiperSlide>
-                <SwiperSlide className="w-full h-full flex items-center justify-center">
+                <SwiperSlide>
                     <video
-                        ref={(el) => { videoRefs.current[1] = el }}
+                        ref={(el) => { videoRefs.current[1] = el; }}
                         src="/videos/milkautvideo.mp4"
                         muted
-                        autoPlay
                         playsInline
                         loop
                         className="w-full h-full object-contain"
                     />
                 </SwiperSlide>
-                <SwiperSlide className="w-full h-full flex items-center justify-center">
+                <SwiperSlide>
                     <video
-                        ref={(el) => { videoRefs.current[2] = el }}
+                        ref={(el) => { videoRefs.current[2] = el; }}
                         src="/videos/conosudvideo.mp4"
                         muted
-                        autoPlay
                         playsInline
                         loop
                         className="w-full h-full object-contain"
