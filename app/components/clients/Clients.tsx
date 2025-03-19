@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import React from 'react'
 
 export default function Clients() {
@@ -26,7 +25,7 @@ export default function Clients() {
                     <p>Local: Yrigoyen 451</p>
                 </div>
                 <div className="flex flex-col justify-center items-center border border-[#4166e0] w-25  h-20">
-                    <h2>Tony's Burguer</h2>
+                    <h2>Tonys Burguer</h2>
                     <p>Hamburgueseria</p>
                     <p>Local: Sarmiento 200</p>
                 </div>
