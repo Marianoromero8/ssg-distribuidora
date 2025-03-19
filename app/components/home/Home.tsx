@@ -1,9 +1,12 @@
-'use client'
+"use client";
 import { useEffect, useRef } from "react";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 export default function Home() {
-    // Usamos un array de refs para cada video
     const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
 
     useEffect(() => {
@@ -18,7 +21,7 @@ export default function Home() {
                     }
                 });
             },
-            { threshold: 0.75 } // Ajusta el umbral según lo que consideres "visible"
+            { threshold: 0.75 }
         );
 
         videoRefs.current.forEach((video) => {
@@ -33,51 +36,50 @@ export default function Home() {
     }, []);
 
     return (
-        <div className="flex flex-row justify-center items-center mt-8">
-            <Carousel className="flex justify-center items-center w-full h-full">
-                <CarouselContent>
-                    <CarouselItem className="flex justify-center items-center snap-center max-w-[screen] mx-auto bg-white">
-                        <video
-                            ref={(el) => { videoRefs.current[0] = el }}
-                            src="/videos/tonaditavideo.mp4"
-                            width={300}
-                            height={300}
-                            muted
-                            autoPlay
-                            playsInline
-                            loop
-                            className=""
-                        />
-                    </CarouselItem>
-                    <CarouselItem className="flex justify-center items-center snap-center max-w-[screen] mx-auto bg-white">
-                        <video
-                            ref={(el) => { videoRefs.current[1] = el }}
-                            src="/videos/milkautvideo.mp4"
-                            width={300}
-                            height={300}
-                            muted
-                            autoPlay
-                            playsInline
-                            loop
-                            className=""
-                        />
-                    </CarouselItem>
-                    <CarouselItem className="flex justify-center items-center snap-center max-w-[screen] mx-auto">
-                        <video
-                            ref={(el) => { videoRefs.current[1] = el }}
-                            src="/videos/conosudvideo.mp4"
-                            width={300}
-                            height={300}
-                            muted
-                            autoPlay
-                            playsInline
-                            loop
-                            className=""
-                        />                    </CarouselItem>
-                </CarouselContent>
-                <CarouselPrevious className="absolute left-10" />
-                <CarouselNext className="absolute right-10" />
-            </Carousel>
+        <div className="w-full h-screen flex justify-center items-center bg-transparent my-8">
+            <Swiper
+                spaceBetween={0}
+                slidesPerView={1}
+                loop={true}
+                pagination={{ clickable: true }}
+                navigation={true}
+                modules={[Pagination, Navigation]}
+                className="w-full h-full"
+            >
+                <SwiperSlide className="w-full h-full flex items-center justify-center">
+                    <video
+                        ref={(el) => { videoRefs.current[0] = el }}
+                        src="/videos/tonaditavideo.mp4"
+                        muted
+                        autoPlay
+                        playsInline
+                        loop
+                        className="w-full h-full object-contain"
+                    />
+                </SwiperSlide>
+                <SwiperSlide className="w-full h-full flex items-center justify-center">
+                    <video
+                        ref={(el) => { videoRefs.current[1] = el }}
+                        src="/videos/milkautvideo.mp4"
+                        muted
+                        autoPlay
+                        playsInline
+                        loop
+                        className="w-full h-full object-contain"
+                    />
+                </SwiperSlide>
+                <SwiperSlide className="w-full h-full flex items-center justify-center">
+                    <video
+                        ref={(el) => { videoRefs.current[2] = el }}
+                        src="/videos/conosudvideo.mp4"
+                        muted
+                        autoPlay
+                        playsInline
+                        loop
+                        className="w-full h-full object-contain"
+                    />
+                </SwiperSlide>
+            </Swiper>
         </div>
     );
 }
