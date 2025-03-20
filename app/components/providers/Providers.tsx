@@ -5,7 +5,7 @@ import brands from "../../../public/data/products.json";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
-export default function Brands() {
+export default function Providers() {
     const [visible, setVisible] = useState(6); // Inicialmente muestra 6 elementos
 
     const handleShow = () => {
@@ -19,20 +19,32 @@ export default function Brands() {
 
     return (
         <div id="brands" className="text-[#4166e0]">
-            <div className="flex justify-center mt-5 mb-5 text-5xl">
+            <motion.div
+                className="flex justify-center mt-8 mb-6 text-5xl"
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 2 }}
+                viewport={{ once: true }}
+            >
                 <h2>Proveedores</h2>
-            </div>
+            </motion.div>
             <hr className="border border-[#4166e0] mx-10 sm:mx-32" />
 
             {/* Contenedor con animación */}
-            <section className="flex flex-wrap justify-center mt-8 gap-12">
+            <motion.section
+                className="flex flex-wrap justify-center mt-8 gap-12"
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 2 }}
+                viewport={{ once: true }}
+            >
                 <AnimatePresence>
                     {brands.slice(0, visible).map((img) => (
                         <motion.div
                             key={img.id}
                             layout
                             initial={{ opacity: 0, scale: 0.8 }}
-                            animate={{ opacity: 1, scale: 1 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
                             exit={{ opacity: 0, scale: 0.8 }}
                             transition={{ duration: 0.5 }}
                         >
@@ -48,10 +60,16 @@ export default function Brands() {
                         </motion.div>
                     ))}
                 </AnimatePresence>
-            </section>
+            </motion.section>
 
             {/* Botón animado */}
-            <div className="flex justify-center mt-8">
+            <motion.div
+                className="flex justify-center mt-8"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 3 }}
+                viewport={{ once: true }}
+            >
                 <motion.button
                     onClick={handleShow}
                     className=""
@@ -60,7 +78,7 @@ export default function Brands() {
                 >
                     {visible < brands.length ? "Ver más" : "Mostrar menos"}
                 </motion.button>
-            </div>
+            </motion.div>
         </div>
     );
 }

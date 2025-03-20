@@ -33,7 +33,7 @@ export default function Footer() {
                         <a href="https://www.instagram.com/ssgdistribuciones/" target="_blank" rel="noopener noreferrer">
                             <FaInstagram className="text-2xl hover:text-gray-600 transition-colors" />
                         </a>
-                        <a href="mailto:tuemail@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <a href="mailto:distrissg@gmail.com" target="_blank" rel="noopener noreferrer">
                             <FaEnvelope className="text-2xl hover:text-gray-600 transition-colors" />
                         </a>
                     </div>

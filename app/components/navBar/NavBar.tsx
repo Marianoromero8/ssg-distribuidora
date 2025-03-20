@@ -13,6 +13,7 @@ import Image from "next/image";
 import Link from "next/link";
 import brands from "../../../public/data/products.json"
 import { usePathname, useRouter } from "next/navigation";
+import { motion } from 'framer-motion'
 
 
 //Le saque el focus a los DropdownMenuSubTrigger y DropdownMenuItem
@@ -42,7 +43,12 @@ export default function NavBar() {
 
     return (
         <div className="flex flex-row justify-center w-full gap-5">   {/*Le cambie el w-screen a w-full para que desaparezca el scroll para moverse a los costados FUNCIONO! */}
-            <div className="">
+            <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+            >
                 <Link href='/'>
                     <Image
                         src="/Distribuidora-SSG_Logo-Negro_2024.svg"
@@ -51,17 +57,35 @@ export default function NavBar() {
                         alt="Logo"
                     />
                 </Link>
-            </div>
+            </motion.div>
 
             <div className="flex flex-row justify-start items-center text-[#4166e0] ps-14 gap-40 w-screen">
                 {/* Sobre nosotros */}
                 <DropdownMenu>
-                    <DropdownMenuTrigger onClick={handleAboutUsClick} className="transition-transform duration-300 ease-in-out transform hover:scale-105">Sobre nosotros</DropdownMenuTrigger>
+                    <DropdownMenuTrigger onClick={handleAboutUsClick} className="transition-transform duration-300 ease-in-out transform hover:scale-105">
+                        <motion.p
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: true }}
+                        >
+                            Sobre nosotros
+                        </motion.p>
+                    </DropdownMenuTrigger>
                 </DropdownMenu>
 
                 {/* Marcas */}
                 <DropdownMenu>
-                    <DropdownMenuTrigger className="transition-transform duration-300 ease-in-out transform hover:scale-105">Marcas</DropdownMenuTrigger>
+                    <DropdownMenuTrigger className="transition-transform duration-300 ease-in-out transform hover:scale-105">
+                        <motion.p
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            transition={{ duration: 1.5 }}
+                            viewport={{ once: true }}
+                        >
+                            Marcas
+                        </motion.p>
+                    </DropdownMenuTrigger>
                     <DropdownMenuContent className="text-[#ffff] bg-[#4166e0] max-h-48 overflow-y-auto">
                         <DropdownMenuSub>
                             {brands.map((options) => (
@@ -78,7 +102,16 @@ export default function NavBar() {
                 {/* Productos */}
                 <DropdownMenu>
                     <Link href={"/products"}>
-                        <DropdownMenuTrigger className="transition-transform duration-300 ease-in-out transform hover:scale-105">Productos</DropdownMenuTrigger>
+                        <DropdownMenuTrigger className="transition-transform duration-300 ease-in-out transform hover:scale-105">
+                            <motion.p
+                                initial={{ opacity: 0 }}
+                                whileInView={{ opacity: 1 }}
+                                transition={{ duration: 2 }}
+                                viewport={{ once: true }}
+                            >
+                                Productos
+                            </motion.p>
+                        </DropdownMenuTrigger>
                     </Link>
                     <DropdownMenuContent className="text-[#ffff] bg-[#4166e0]">
                         <Link href={"/products"}>
@@ -182,7 +215,16 @@ export default function NavBar() {
 
                 {/* Clientes */}
                 <DropdownMenu>
-                    <DropdownMenuTrigger className="transition-transform duration-300 ease-in-out transform hover:scale-105">Clientes</DropdownMenuTrigger>
+                    <DropdownMenuTrigger className="transition-transform duration-300 ease-in-out transform hover:scale-105">
+                        <motion.p
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            transition={{ duration: 2.5 }}
+                            viewport={{ once: true }}
+                        >
+                            Clientes
+                        </motion.p>
+                    </DropdownMenuTrigger>
                     <DropdownMenuContent className="text-[#ffff] bg-[#4166e0]">
                         <Link href="https://www.instagram.com/reina.burguesa/" target="_blank">
                             <DropdownMenuItem className="cursor-pointer">
@@ -206,7 +248,16 @@ export default function NavBar() {
 
                 {/*Contacto */}
                 <DropdownMenu>
-                    <DropdownMenuTrigger onClick={() => scrollToSection('contacts')} className="transition-transform duration-300 ease-in-out transform hover:scale-105">Contacto</DropdownMenuTrigger>
+                    <DropdownMenuTrigger onClick={() => scrollToSection('contacts')} className="transition-transform duration-300 ease-in-out transform hover:scale-105">
+                        <motion.p
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            transition={{ duration: 3 }}
+                            viewport={{ once: true }}
+                        >
+                            Contacto
+                        </motion.p>
+                    </DropdownMenuTrigger>
                 </DropdownMenu>
             </div>
         </div>
