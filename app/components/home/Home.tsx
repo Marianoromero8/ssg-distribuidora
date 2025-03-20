@@ -56,7 +56,7 @@ export default function Home() {
                     className="w-full h-full"
                     onSlideChange={handleSlideChange}
                 >
-                    {["tonaditavideo.mp4", "milkautvideo.mp4", "conosudvideo.mp4"].map((video, index) => (
+                    {["tonaditavideo.mp4", "cremaMilkaut.mp4", "conosudvideo.mp4", "baldemilkaut.mp4", "simplotvideo.mp4"].map((video, index) => (
                         <SwiperSlide key={index}>
                             <video
                                 ref={(el) => { videoRefs.current[index] = el; }}
@@ -64,7 +64,7 @@ export default function Home() {
                                 muted
                                 playsInline
                                 loop
-                                className="w-full h-full object-cover"
+                                className="w-full h-full object-contain"
                             />
                         </SwiperSlide>
                     ))}
@@ -73,60 +73,3 @@ export default function Home() {
         </div>
     );
 }
-
-// export default function Home() {
-//     const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
-
-//     const handleSlideChange = (swiper: SwiperClass) => {
-//         const activeVideo = videoRefs.current[swiper.activeIndex];
-//         if (activeVideo) {
-//             activeVideo.play().catch((err) => console.error("Error al reproducir:", err));
-//         }
-//     };
-
-//     return (
-//         <div className="flex flex-col md:flex-row text-[#4166e0] gap-12 p-6 w-full items-center">
-//             {/* Contenedor del título */}
-//             <div className="flex flex-col justify-center items-center w-1/2 p-8 border-r-2">
-//                 <h1 className="text-5xl text-center leading-none">
-//                     <span className="block">Bienvenido a</span>
-//                     <span className="block font-bold">SSG Distribuidora</span>
-//                 </h1>
-//                 <p className="text-[#4166e0] mt-4 text-center">
-//                     Descubre nuestra línea de productos exclusivos con la mejor calidad y precio del mercado.
-//                 </p>
-//                 <div className="text-[#4166e0] mt-6 flex justify-center space-x-4">
-//                     <Button className="px-6 py-2 rounded-lg" variant="ghost">Ver Productos</Button>
-//                     <Button className="px-6 py-2 rounded-lg" variant="ghost">Contacto</Button>
-//                 </div>
-//             </div>
-
-//             {/* Contenedor del carrusel */}
-//             <div className="flex justify-center items-center w-1/2 h-[80vh]">
-//                 <Swiper
-//                     spaceBetween={0}
-//                     slidesPerView={1}
-//                     loop={true}
-//                     pagination={{ clickable: true }}
-//                     navigation={true}
-//                     modules={[Pagination, Navigation]}
-//                     className="w-full h-full"
-//                     onSlideChange={handleSlideChange}
-//                 >
-//                     {["tonaditavideo.mp4", "milkautvideo.mp4", "conosudvideo.mp4"].map((video, index) => (
-//                         <SwiperSlide key={index}>
-//                             <video
-//                                 ref={(el) => { videoRefs.current[index] = el; }}
-//                                 src={`/videos/${video}`}
-//                                 muted
-//                                 playsInline
-//                                 loop
-//                                 className="w-full h-full object-cover"
-//                             />
-//                         </SwiperSlide>
-//                     ))}
-//                 </Swiper>
-//             </div>
-//         </div>
-//     );
-// }

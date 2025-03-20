@@ -12,19 +12,33 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import brands from "../../../public/data/products.json"
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { usePathname, useRouter } from "next/navigation";
+
 
 //Le saque el focus a los DropdownMenuSubTrigger y DropdownMenuItem
 export default function NavBar() {
+    const router = useRouter();
+    const pathname = usePathname();
 
     const scrollToSection = (sectionId: string) => {
-        const section = document.getElementById(sectionId);
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
-        } else {
-            console.error(`Element with id "${sectionId}" not found.`);
-        }
+        setTimeout(() => {
+
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                console.error(`Element with id "${sectionId}" not found.`);
+            }
+        }, 200);
     }
+
+    const handleAboutUsClick = () => {
+        if (pathname === "/") {
+            scrollToSection("aboutus");
+        } else {
+            router.push("/#aboutus"); // Redirige y luego hace scroll
+        }
+    };
 
     return (
         <div className="flex flex-row justify-center w-full gap-5">   {/*Le cambie el w-screen a w-full para que desaparezca el scroll para moverse a los costados FUNCIONO! */}
@@ -42,7 +56,7 @@ export default function NavBar() {
             <div className="flex flex-row justify-start items-center text-[#4166e0] ps-14 gap-40 w-screen">
                 {/* Sobre nosotros */}
                 <DropdownMenu>
-                    <DropdownMenuTrigger onClick={() => scrollToSection('aboutus')} className="transition-transform duration-300 ease-in-out transform hover:scale-105">Sobre nosotros</DropdownMenuTrigger>
+                    <DropdownMenuTrigger onClick={handleAboutUsClick} className="transition-transform duration-300 ease-in-out transform hover:scale-105">Sobre nosotros</DropdownMenuTrigger>
                 </DropdownMenu>
 
                 {/* Marcas */}
@@ -192,24 +206,7 @@ export default function NavBar() {
 
                 {/*Contacto */}
                 <DropdownMenu>
-                    <DropdownMenuTrigger className="transition-transform duration-300 ease-in-out transform hover:scale-105">Contacto</DropdownMenuTrigger>
-                    <DropdownMenuContent className="text-[#ffff] bg-[#4166e0]">
-                        <DropdownMenuItem>
-                            <Link href="https://www.instagram.com/ssgdistribuciones/" target="_blank">
-                                <div className="flex flex-row items-center gap-2">
-                                    <FaInstagram />Instragram
-                                </div>
-                            </Link>
-                        </DropdownMenuItem>
-                        <DropdownMenuSeparator />
-                        <DropdownMenuItem>
-                            <Link href="https://www.facebook.com/SSGDistribuidora?locale=es_LA" target="_blank">
-                                <div className="flex flex-row items-center gap-2">
-                                    <FaFacebook />Facebook
-                                </div>
-                            </Link>
-                        </DropdownMenuItem>
-                    </DropdownMenuContent>
+                    <DropdownMenuTrigger onClick={() => scrollToSection('contacts')} className="transition-transform duration-300 ease-in-out transform hover:scale-105">Contacto</DropdownMenuTrigger>
                 </DropdownMenu>
             </div>
         </div>

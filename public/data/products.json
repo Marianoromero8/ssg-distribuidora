@@ -639,7 +639,7 @@
             },
             {
                 "id": 84,
-                "image": "/products/mayonesa250ml.png",
+                "image": "/products/mayonesa-500cc-benidorm.png",
                 "productName": "Benidorm Mayonesa",
                 "presentation": "250 ML",
                 "category": "refrigerados",
@@ -647,15 +647,15 @@
             },
             {
                 "id": 85,
-                "image": "/products/ketchup250ml.png",
-                "productName": "Benidorm Mayonesa",
+                "image": "/products/ketchup-500cc-benidorm.png",
+                "productName": "Benidorm Ketchup",
                 "presentation": "250 ML",
                 "category": "refrigerados",
                 "subcategory": "aderezos"
             },
             {
                 "id": 86,
-                "image": "/products/mostaza250ml.png",
+                "image": "/products/mostaza-500cc-benidorm.png",
                 "productName": "Benidorm Mostaza",
                 "presentation": "250 ML",
                 "category": "refrigerados",
