@@ -27,8 +27,8 @@ export default function NavBar() {
     }
 
     return (
-        <div className="flex flex-row justify-center w-full gap-5 bg-[#4166e0]">   {/*Le cambie el w-screen a w-full para que desaparezca el scroll para moverse a los costados FUNCIONO! */}
-            <div className="bg-white">
+        <div className="flex flex-row justify-center w-full gap-5">   {/*Le cambie el w-screen a w-full para que desaparezca el scroll para moverse a los costados FUNCIONO! */}
+            <div className="">
                 <Link href='/'>
                     <Image
                         src="/Distribuidora-SSG_Logo-Negro_2024.svg"
@@ -39,15 +39,15 @@ export default function NavBar() {
                 </Link>
             </div>
 
-            <div className="flex flex-row justify-start items-center text-[#ffff] ps-14 gap-40 bg-[#4166e0] text-[#000] w-screen">
+            <div className="flex flex-row justify-start items-center text-[#4166e0] ps-14 gap-40 w-screen">
                 {/* Sobre nosotros */}
                 <DropdownMenu>
-                    <DropdownMenuTrigger onClick={() => scrollToSection('aboutus')}>Sobre nosotros</DropdownMenuTrigger>
+                    <DropdownMenuTrigger onClick={() => scrollToSection('aboutus')} className="transition-transform duration-300 ease-in-out transform hover:scale-105">Sobre nosotros</DropdownMenuTrigger>
                 </DropdownMenu>
 
                 {/* Marcas */}
                 <DropdownMenu>
-                    <DropdownMenuTrigger>Marcas</DropdownMenuTrigger>
+                    <DropdownMenuTrigger className="transition-transform duration-300 ease-in-out transform hover:scale-105">Marcas</DropdownMenuTrigger>
                     <DropdownMenuContent className="text-[#ffff] bg-[#4166e0] max-h-48 overflow-y-auto">
                         <DropdownMenuSub>
                             {brands.map((options) => (
@@ -64,7 +64,7 @@ export default function NavBar() {
                 {/* Productos */}
                 <DropdownMenu>
                     <Link href={"/products"}>
-                        <DropdownMenuTrigger>Productos</DropdownMenuTrigger>
+                        <DropdownMenuTrigger className="transition-transform duration-300 ease-in-out transform hover:scale-105">Productos</DropdownMenuTrigger>
                     </Link>
                     <DropdownMenuContent className="text-[#ffff] bg-[#4166e0]">
                         <Link href={"/products"}>
@@ -163,7 +163,7 @@ export default function NavBar() {
 
                 {/* Clientes */}
                 <DropdownMenu>
-                    <DropdownMenuTrigger>Clientes</DropdownMenuTrigger>
+                    <DropdownMenuTrigger className="transition-transform duration-300 ease-in-out transform hover:scale-105">Clientes</DropdownMenuTrigger>
                     <DropdownMenuContent className="text-[#ffff] bg-[#4166e0]">
                         <Link href="https://www.instagram.com/reina.burguesa/" target="_blank">
                             <DropdownMenuItem className="cursor-pointer">
@@ -187,7 +187,7 @@ export default function NavBar() {
 
                 {/*Contacto */}
                 <DropdownMenu>
-                    <DropdownMenuTrigger>Contacto</DropdownMenuTrigger>
+                    <DropdownMenuTrigger className="transition-transform duration-300 ease-in-out transform hover:scale-105">Contacto</DropdownMenuTrigger>
                     <DropdownMenuContent className="text-[#ffff] bg-[#4166e0]">
                         <DropdownMenuItem>
                             <Link href="https://www.instagram.com/ssgdistribuciones/" target="_blank">

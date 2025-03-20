@@ -9,7 +9,7 @@ type CardProps = {
 
 export default function ProductCard({ image, productName, presentation }: CardProps) {
     return (
-        <div className="flex flex-col bg-[#ffff] p-5 text-[##4166e0] border-2 border-[#4166e0] w-64 min-h-[350px] h-full transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+        <div className="flex flex-col p-5 text-[##4166e0] border-2 w-64 min-h-[350px] h-full transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
             <div className="relative w-full h-56 rounded-lg overflow-hidden border border-[#e8decb]">
                 <Image
                     src={image}
