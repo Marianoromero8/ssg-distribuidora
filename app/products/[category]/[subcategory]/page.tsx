@@ -57,7 +57,7 @@ export default function SubcategoryPage() {
     }, [category, subcategory]);
 
     return (
-        <div className='mb-8'>
+        <div className='px-5 sm:px-10 mb-8'>
             <h1 className='text-5xl text-[#4166e0] flex justify-center p-5'>
                 Productos {formattedCategory} - {formattedSubcategory}
             </h1>

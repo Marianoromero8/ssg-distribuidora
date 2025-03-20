@@ -130,6 +130,11 @@ export default function NavBar() {
                                         Fiambres
                                     </DropdownMenuItem>
                                 </Link>
+                                <Link href="/products/refrigerados/salchichas">
+                                    <DropdownMenuItem>
+                                        Salchichas
+                                    </DropdownMenuItem>
+                                </Link>
                             </DropdownMenuSubContent>
                         </DropdownMenuSub>
                         <DropdownMenuSub>

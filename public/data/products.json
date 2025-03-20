@@ -86,6 +86,14 @@
                 "presentation": "200 GR",
                 "category": "refrigerados",
                 "subcategory": "lacteos"
+            },
+            {
+                "id": 76,
+                "image": "/products/cremetteTonadita.png",
+                "productName": "Queso Crema - Tonadita",
+                "presentation": "3 KG",
+                "category": "refrigerados",
+                "subcategory": "lacteos"
             }
         ]
     },
@@ -144,8 +152,8 @@
             {
                 "id": 21,
                 "image": "/products/crema-39-milkaut.webp",
-                "productName": "Manteca Clasica",
-                "presentation": "200 GR",
+                "productName": "Crema 39%",
+                "presentation": "5 L",
                 "category": "refrigerados",
                 "subcategory": "lacteos"
             },
@@ -325,20 +333,39 @@
         "products": [
             {
                 "id": 5,
-                "image": "/boogysBurguers.jpeg",
-                "productName": "Hamburguesas",
-                "presentation": "Unidades por bulto: 20 x 2u"
+                "image": "/products/boogys.png",
+                "productName": "Hamburguesas - Boogys",
+                "presentation": "60 u x 80 GR",
+                "category": "congelados",
+                "subcategory": "hamburguesas"
+            },
+            {
+                "id": 113,
+                "image": "/products/boogys2.png",
+                "productName": "Hamburguesas - Boogys",
+                "presentation": "40 u x 110 GR",
+                "category": "congelados",
+                "subcategory": "hamburguesas"
             }
         ]
     },
     {
         "id": 6,
-        "src": "/lacomarca.jpeg",
+        "src": "/lacomarca.png",
         "height": 150,
         "width": 150,
         "website": "",
         "brand": "La Comarca",
-        "products": []
+        "products": [
+            {
+                "id": 116,
+                "image": "/products/salchichaslacomarca.png",
+                "productName": "Salchichas Largas - La Comarca",
+                "presentation": "18 u",
+                "category": "refrigerados",
+                "subcategory": "salchichas"
+            }
+        ]
     },
     {
         "id": 7,
@@ -347,7 +374,24 @@
         "width": 150,
         "website": "https://ranchoalto.com.ar/",
         "brand": "Rancho Alto",
-        "products": []
+        "products": [
+            {
+                "id": 112,
+                "image": "/products/ranchoaltohamburguesa.png",
+                "productName": "Hamburguesa - Rancho Alto",
+                "presentation": "4 u x 69 GR",
+                "category": "congelados",
+                "subcategory": "hamburguesas"
+            },
+            {
+                "id": 115,
+                "image": "/products/salchichasranchoalto.png",
+                "productName": "Salchichas Cortas - Rancho Alto",
+                "presentation": "6 u",
+                "category": "refrigerados",
+                "subcategory": "salchichas"
+            }
+        ]
     },
     {
         "id": 8,
@@ -359,15 +403,99 @@
         "products": [
             {
                 "id": 1,
-                "image": "/Nuggets.jpeg",
-                "productName": "Nuggets",
-                "presentation": "Bolsa 1kg"
+                "image": "/products/medallonpolloTiernis.png",
+                "productName": "Medallón Pollo - Tiernis",
+                "presentation": "Caja 6 kg",
+                "category": "congelados",
+                "subcategory": "rebozados"
             },
             {
                 "id": 2,
-                "image": "/burguerTiernis.jpeg",
-                "productName": "Hamburguesa",
-                "presentation": "Caja 20 x 4"
+                "image": "/products/medallonpolloyespinacaTiernis.png",
+                "productName": "Medallón Pollo y Espinaca - Tiernis",
+                "presentation": "Caja 6 kg",
+                "category": "congelados",
+                "subcategory": "rebozados"
+            },
+            {
+                "id": 118,
+                "image": "/products/medallonpolloyjqTiernis.png",
+                "productName": "Medallón Pollo Jamón y Queso - Tiernis",
+                "presentation": "Caja 6 kg",
+                "category": "congelados",
+                "subcategory": "rebozados"
+            },
+            {
+                "id": 87,
+                "image": "/products/patitaspolloTiernis.png",
+                "productName": "Patitas Pollo - Tiernis",
+                "presentation": "Caja 6 kg",
+                "category": "congelados",
+                "subcategory": "rebozados"
+            },
+            {
+                "id": 88,
+                "image": "/products/patitaspollojyqTiernis.png",
+                "productName": "Patitas Pollo Jamón y Queso - Tiernis",
+                "presentation": "Caja 6 kg",
+                "category": "congelados",
+                "subcategory": "rebozados"
+            },
+            {
+                "id": 89,
+                "image": "/products/barritasmerluzaTiernis.png",
+                "productName": "Barritas Merluza - Tiernis",
+                "presentation": "Caja 6 kg",
+                "category": "congelados",
+                "subcategory": "rebozados"
+            },
+            {
+                "id": 90,
+                "image": "/products/filetmerluzaTiernis.png",
+                "productName": "Filet Merluza - Tiernis",
+                "presentation": "Caja 5 kg",
+                "category": "congelados",
+                "subcategory": "rebozados"
+            },
+            {
+                "id": 100,
+                "image": "/products/medallonmerluzaTiernis.png",
+                "productName": "Medallón Merluza - Tiernis",
+                "presentation": "Caja 6 kg",
+                "category": "congelados",
+                "subcategory": "rebozados"
+            },
+            {
+                "id": 101,
+                "image": "/products/medallonmerluzayespinacaTiernis.png",
+                "productName": "Medallón Merluza y Espinaca - Tiernis",
+                "presentation": "Caja 6 kg",
+                "category": "congelados",
+                "subcategory": "rebozados"
+            },
+            {
+                "id": 107,
+                "image": "/products/bocaditosespinacaTiernis.png",
+                "productName": "Bocaditos Espinaca - Tiernis",
+                "presentation": "Caja 6 KG",
+                "category": "congelados",
+                "subcategory": "rebozados"
+            },
+            {
+                "id": 108,
+                "image": "/products/bocaditosmuzzaycalabazaTiernis.png",
+                "productName": "Bocaditos Muzza y Calabaza - Tiernis",
+                "presentation": "Caja 6 KG",
+                "category": "congelados",
+                "subcategory": "rebozados"
+            },
+            {
+                "id": 109,
+                "image": "/products/bastonesmuzzaTiernis.png",
+                "productName": "Bastones Muzza - Tiernis",
+                "presentation": "Caja 6 KG",
+                "category": "congelados",
+                "subcategory": "rebozados"
             }
         ]
     },
@@ -378,7 +506,88 @@
         "width": 150,
         "website": "https://www.grupogta.com.ar/marcas/granja-tres-arroyos",
         "brand": "Granja Tres Arroyos",
-        "products": []
+        "products": [
+            {
+                "id": 77,
+                "image": "/products/Medallonesx1KG.png",
+                "productName": "Medallon de Pollo - GTA",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "rebozados"
+            },
+            {
+                "id": 78,
+                "image": "/products/MedallonJ&Qx1KG.png",
+                "productName": "Medallon Pollo + JyQ - GTA",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "rebozados"
+            },
+            {
+                "id": 79,
+                "image": "/products/Hamburguesasx166G.png",
+                "productName": "Hamburguesa Pollo - GTA",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "rebozados"
+            },
+            {
+                "id": 80,
+                "image": "/products/Palitosx1KG.png",
+                "productName": "Palitos Pollo - GTA",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "rebozados"
+            },
+            {
+                "id": 81,
+                "image": "/products/PalitosCapresex1KG.png",
+                "productName": "Palitos Caprese - GTA",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "rebozados"
+            },
+            {
+                "id": 82,
+                "image": "/products/Nuggetsx1KG.png",
+                "productName": "Nuggets Pollo - GTA",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "rebozados"
+            },
+            {
+                "id": 83,
+                "image": "/products/Bocaditosx1KG.png",
+                "productName": "Bocaditos Pollo - GTA",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "rebozados"
+            },
+            {
+                "id": 104,
+                "image": "/products/croquetascalabazayquesoGTA.png",
+                "productName": "Croquetas Calabaza y Queso - GTA",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "rebozados"
+            },
+            {
+                "id": 105,
+                "image": "/products/croquetaespinacayquesoGTA.png",
+                "productName": "Croquetas Espinaca y Queso - GTA",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "rebozados"
+            },
+            {
+                "id": 106,
+                "image": "/products/supremacrispyGTA.png",
+                "productName": "Suprema Crispy - GTA",
+                "presentation": "1 KG",
+                "category": "congelados",
+                "subcategory": "rebozados"
+            }
+        ]
     },
     {
         "id": 10,
@@ -425,6 +634,30 @@
                 "image": "/products/mayonesa2900-benidorm.jpg",
                 "productName": "Benidorm Mayonesa",
                 "presentation": "2.9 KG",
+                "category": "refrigerados",
+                "subcategory": "aderezos"
+            },
+            {
+                "id": 84,
+                "image": "/products/mayonesa250ml.png",
+                "productName": "Benidorm Mayonesa",
+                "presentation": "250 ML",
+                "category": "refrigerados",
+                "subcategory": "aderezos"
+            },
+            {
+                "id": 85,
+                "image": "/products/ketchup250ml.png",
+                "productName": "Benidorm Mayonesa",
+                "presentation": "250 ML",
+                "category": "refrigerados",
+                "subcategory": "aderezos"
+            },
+            {
+                "id": 86,
+                "image": "/products/mostaza250ml.png",
+                "productName": "Benidorm Mostaza",
+                "presentation": "250 ML",
                 "category": "refrigerados",
                 "subcategory": "aderezos"
             }
@@ -672,8 +905,25 @@
         "height": 150,
         "width": 150,
         "website": "",
-        "brand": "S",
-        "products": []
+        "brand": "Solimeno",
+        "products": [
+            {
+                "id": 102,
+                "image": "/products/chickenfingerSolimeno.png",
+                "productName": "Chicken Finger - Solimeno",
+                "presentation": "Caja 6 kg",
+                "category": "congelados",
+                "subcategory": "rebozados"
+            },
+            {
+                "id": 103,
+                "image": "/products/nuggetspolloSolimeno.png",
+                "productName": "Nuggets Pollo - Solimeno",
+                "presentation": "Caja 6 kg",
+                "category": "congelados",
+                "subcategory": "rebozados"
+            }
+        ]
     },
     {
         "id": 18,
@@ -822,6 +1072,94 @@
                 "presentation": "1 KG",
                 "category": "congelados",
                 "subcategory": "frutas"
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "src": "/ladefensalogo.jpeg",
+        "height": 150,
+        "width": 150,
+        "website": "https://www.alifberries.com.ar/",
+        "brand": "La Defensa",
+        "products": [
+            {
+                "id": 110,
+                "image": "/products/ladefensa40x110gr.png",
+                "productName": "Hamburguesas - La Defensa",
+                "presentation": "40 u x 110 GR",
+                "category": "congelados",
+                "subcategory": "hamburguesas"
+            },
+            {
+                "id": 111,
+                "image": "/products/ladefensa72x55gr.png",
+                "productName": "Hamburguesas - La Defensa",
+                "presentation": "72 u x 55 GR",
+                "category": "congelados",
+                "subcategory": "hamburguesas"
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "src": "/laconquistalogo.webp",
+        "height": 150,
+        "width": 150,
+        "website": "",
+        "brand": "La Conquista",
+        "products": [
+            {
+                "id": 114,
+                "image": "/products/laconquistahamburguesas.png",
+                "productName": "Hamburguesas - La Conquista",
+                "presentation": "40 u x 110 GR",
+                "category": "congelados",
+                "subcategory": "hamburguesas"
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "src": "/jetfood.png",
+        "height": 150,
+        "width": 150,
+        "website": "",
+        "brand": "Jet Food",
+        "products": [
+            {
+                "id": 117,
+                "image": "/products/salchichasjetfood.png",
+                "productName": "Salchichas Cortas - Jet Food",
+                "presentation": "6 u",
+                "category": "refrigerados",
+                "subcategory": "salchichas"
+            }
+        ]
+    },
+    {
+        "id": 28,
+        "src": "/vicniklogo.jpg",
+        "height": 150,
+        "width": 150,
+        "website": "",
+        "brand": "VicNik",
+        "products": [
+            {
+                "id": 119,
+                "image": "/products/vicnik.png",
+                "productName": "Pan Salchichas - VicNik",
+                "presentation": "6 u",
+                "category": "secos",
+                "subcategory": "panes"
+            },
+            {
+                "id": 120,
+                "image": "/products/vicnik2.png",
+                "productName": "Pan Hamburguesas - VicNik",
+                "presentation": "4 u",
+                "category": "secos",
+                "subcategory": "panes"
             }
         ]
     }
