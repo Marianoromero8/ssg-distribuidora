@@ -7,7 +7,7 @@ import Image from "next/image"
 
 export default function AboutUs() {
     return (
-        <div id="aboutus" className="flex flex-col md:flex-row text-[#4166e0] gap-12 p-6 w-full overflow-auto">
+        <div id="aboutus" className="flex flex-col md:flex-row text-[#4166e0] px-5 sm:px-10 mb-8 gap-12 p-6 w-full overflow-auto">
             <div className="flex flex-col gap-5 w-full md:w-1/2">
                 <h2 className="flex justify-center text-4xl">Sobre Nosotros</h2>
                 <hr className="border border-[#4166e0]" />
