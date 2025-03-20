@@ -53,7 +53,7 @@ export default function BrandPage() {
     }, [brand]);
     // brandProducts.length > 0
     return (
-        <div className='mb-8'>
+        <div className='px-5 sm:px-10 mb-8'>
             <h1 className='text-5xl text-[#4166e0] flex justify-center p-5'>Productos {brand}</h1>
             <hr className="border border-[#4166e0] " />
             {loading ? (

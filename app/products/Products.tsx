@@ -53,10 +53,8 @@ export default function Products() {
 
     return (
         <div className="px-5 sm:px-10 mb-8" >
-            <div className=" flex flex-row justify-center gap-60">
-                <div className=" pt-5 text-5xl font-bold text-[#4166e0] p-5">
-                    <h1>Productos</h1>
-                </div>
+            <div className=" flex flex-row justify-center gap-60 text-5xl font-bold text-[#4166e0] p-5">
+                <h1>Productos</h1>
             </div>
             <hr className="border border-[#4166e0] " />
             <BrandFilter brands={brands} onFilterChange={handleFilterChange} />
