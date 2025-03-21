@@ -30,7 +30,7 @@ export default function Home() {
     }
 
     return (
-        <div className="flex flex-col sm:flex-row text-[#4166e0] gap-12 p-6 mb-6 w-full min-h-screen pt-48 sm:pt-14">
+        <div className="flex flex-col sm:flex-row text-[#4166e0] gap-12 p-6 mb-6 w-full min-h-screen sm:pt-14">
             {/* Texto y Botones */}
             <div className="flex flex-col justify-center items-center sm:items-center text-center sm:text-center w-full sm:w-1/2 p-8">
                 <motion.h1

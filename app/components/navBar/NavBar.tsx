@@ -56,7 +56,7 @@ export default function NavBar() {
     };
 
     return (
-        <div className="flex flex-row justify-center w-full gap-5">   {/*Le cambie el w-screen a w-full para que desaparezca el scroll para moverse a los costados FUNCIONO! */}
+        <div className={`flex flex-row justify-center w-full gap-5 relative transition-all duration-300 ${!menuOpen ? 'h-[70px]' : 'h-[250px]'}`}>   {/*Le cambie el w-screen a w-full para que desaparezca el scroll para moverse a los costados FUNCIONO! */}
             <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -73,7 +73,7 @@ export default function NavBar() {
                 </Link>
             </motion.div>
 
-            <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
+            <button className="md:hidden absolute right-4 top-10 transform -translate-y-1/2" onClick={() => setMenuOpen(!menuOpen)}>
                 {menuOpen ? <X size={28} className="text-[#4166e0]" /> : <Menu size={28} className="text-[#4166e0]" />}
             </button>
 
