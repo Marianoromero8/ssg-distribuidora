@@ -130,12 +130,15 @@ export default function NavBar() {
                             </DropdownMenuItem>
                         </Link>
                         <DropdownMenuSub>
-                            <DropdownMenuSubTrigger onClick={() => {
-                                window.location.href = "/products/congelados"; // Redirige manualmente
-                            }}>
+                            <DropdownMenuSubTrigger >
                                 Congelados
                             </DropdownMenuSubTrigger>
                             <DropdownMenuSubContent className="text-[#ffff] bg-[#4166e0]">
+                                <Link href="/products/congelados">
+                                    <DropdownMenuItem>
+                                        Todos
+                                    </DropdownMenuItem>
+                                </Link>
                                 <Link href="/products/congelados/papas%20fritas">
                                     <DropdownMenuItem>
                                         Papas Fritas
@@ -160,13 +163,15 @@ export default function NavBar() {
                         </DropdownMenuSub>
                         <DropdownMenuSub>
                             <DropdownMenuSubTrigger
-                                onClick={() => {
-                                    window.location.href = "/products/refrigerados"; // Redirige manualmente
-                                }}
                             >
                                 Refrigerados
                             </DropdownMenuSubTrigger>
                             <DropdownMenuSubContent className="text-[#ffff] bg-[#4166e0]">
+                                <Link href="/products/refrigerados">
+                                    <DropdownMenuItem>
+                                        Todos
+                                    </DropdownMenuItem>
+                                </Link>
                                 <Link href="/products/refrigerados/aderezos">
                                     <DropdownMenuItem>
                                         Aderezos
@@ -195,14 +200,15 @@ export default function NavBar() {
                             </DropdownMenuSubContent>
                         </DropdownMenuSub>
                         <DropdownMenuSub>
-                            <DropdownMenuSubTrigger
-                                onClick={() => {
-                                    window.location.href = "/products/secos"; // Redirige manualmente
-                                }}
-                            >
+                            <DropdownMenuSubTrigger>
                                 Secos
                             </DropdownMenuSubTrigger>
                             <DropdownMenuSubContent className="text-[#ffff] bg-[#4166e0]">
+                                <Link href="/products/secos">
+                                    <DropdownMenuItem>
+                                        Todos
+                                    </DropdownMenuItem>
+                                </Link>
                                 <Link href="/products/secos/yerba%20mate">
                                     <DropdownMenuItem>
                                         Yerba Mate
@@ -309,12 +315,15 @@ export default function NavBar() {
                                 </DropdownMenuItem>
                             </Link>
                             <DropdownMenuSub>
-                                <DropdownMenuSubTrigger onClick={() => {
-                                    window.location.href = "/products/congelados"; // Redirige manualmente
-                                }}>
+                                <DropdownMenuSubTrigger>
                                     Congelados
                                 </DropdownMenuSubTrigger>
                                 <DropdownMenuSubContent className="text-[#ffff] bg-[#4166e0]">
+                                    <Link href="/products/congelados">
+                                        <DropdownMenuItem>
+                                            Todos
+                                        </DropdownMenuItem>
+                                    </Link>
                                     <Link href="/products/congelados/papas%20fritas">
                                         <DropdownMenuItem>
                                             Papas Fritas
@@ -338,14 +347,15 @@ export default function NavBar() {
                                 </DropdownMenuSubContent>
                             </DropdownMenuSub>
                             <DropdownMenuSub>
-                                <DropdownMenuSubTrigger
-                                    onClick={() => {
-                                        window.location.href = "/products/refrigerados"; // Redirige manualmente
-                                    }}
-                                >
+                                <DropdownMenuSubTrigger>
                                     Refrigerados
                                 </DropdownMenuSubTrigger>
                                 <DropdownMenuSubContent className="text-[#ffff] bg-[#4166e0]">
+                                    <Link href="/products/refrigerados">
+                                        <DropdownMenuItem>
+                                            Todos
+                                        </DropdownMenuItem>
+                                    </Link>
                                     <Link href="/products/refrigerados/aderezos">
                                         <DropdownMenuItem>
                                             Aderezos
@@ -374,14 +384,15 @@ export default function NavBar() {
                                 </DropdownMenuSubContent>
                             </DropdownMenuSub>
                             <DropdownMenuSub>
-                                <DropdownMenuSubTrigger
-                                    onClick={() => {
-                                        window.location.href = "/products/secos"; // Redirige manualmente
-                                    }}
-                                >
+                                <DropdownMenuSubTrigger>
                                     Secos
                                 </DropdownMenuSubTrigger>
                                 <DropdownMenuSubContent className="text-[#ffff] bg-[#4166e0]">
+                                    <Link href="/products/secos">
+                                        <DropdownMenuItem>
+                                            Todos
+                                        </DropdownMenuItem>
+                                    </Link>
                                     <Link href="/products/secos/yerba%20mate">
                                         <DropdownMenuItem>
                                             Yerba Mate
