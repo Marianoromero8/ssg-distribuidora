@@ -52,7 +52,7 @@ export default function CategoryPage() {
     }, [category]);
 
     return (
-        <div className='px-5 mt-44 md:mt-0 md:px-10 mb-8'>
+        <div className='px-5 pt-4 md:px-10 mb-8'>
             <div className='flex flex-row justify-center gap-60 text-3xl md:text-5xl font-bold text-[#4166e0] p-5'>
                 <h1>Productos {formattedCategory}</h1>
             </div>
