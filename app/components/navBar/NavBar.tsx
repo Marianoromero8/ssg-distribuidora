@@ -46,6 +46,15 @@ export default function NavBar() {
         setMenuOpen(false);
     };
 
+    const handleContactsClick = () => {
+        if (pathname === "/") {
+            scrollToSection("contacts");
+        } else {
+            router.push("/#contacts"); // Redirige y luego hace scroll
+        }
+        setMenuOpen(false);
+    };
+
     return (
         <div className="flex flex-row justify-center w-full gap-5">   {/*Le cambie el w-screen a w-full para que desaparezca el scroll para moverse a los costados FUNCIONO! */}
             <motion.div
@@ -264,7 +273,7 @@ export default function NavBar() {
 
                 {/*Contacto */}
                 <DropdownMenu>
-                    <DropdownMenuTrigger onClick={() => scrollToSection('contacts')} className="transition-transform duration-300 ease-in-out transform hover:scale-105">
+                    <DropdownMenuTrigger onClick={handleContactsClick} className="transition-transform duration-300 ease-in-out transform hover:scale-105">
                         <motion.p
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
@@ -437,7 +446,7 @@ export default function NavBar() {
                         </DropdownMenuContent>
                     </DropdownMenu>
                     <DropdownMenu>
-                        <DropdownMenuTrigger onClick={() => scrollToSection('contacts')} className="transition-transform duration-300 ease-in-out transform hover:scale-105">
+                        <DropdownMenuTrigger onClick={handleContactsClick} className="transition-transform duration-300 ease-in-out transform hover:scale-105">
                             Contacto
                         </DropdownMenuTrigger>
                     </DropdownMenu>
