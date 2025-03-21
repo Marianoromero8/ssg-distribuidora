@@ -1,3 +1,4 @@
+'use client'
 import ProductCard from "@/app/common/product-card"
 import { useEffect, useState } from "react"
 import { BrandFilter } from "./BrandFilter"
@@ -52,11 +53,11 @@ export default function Products() {
     };
 
     return (
-        <div className="px-5 sm:px-10 mb-8" >
-            <div className=" flex flex-row justify-center gap-60 text-5xl font-bold text-[#4166e0] p-5">
+        <div className="flex flex-col justify-center px-5 mt-44 md:mt-0 md:px-10 mb-8" >
+            <div className="flex flex-row justify-center gap-60 text-3xl md:text-5xl font-bold text-[#4166e0] p-5">
                 <h1>Productos</h1>
             </div>
-            <hr className="border border-[#4166e0] " />
+            <hr className="hidden md:block border border-[#4166e0] " />
             <BrandFilter brands={brands} onFilterChange={handleFilterChange} />
             {loading ? (
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-20 gap-8 mt-8">
