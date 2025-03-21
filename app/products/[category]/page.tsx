@@ -52,11 +52,11 @@ export default function CategoryPage() {
     }, [category]);
 
     return (
-        <div className='px-5 sm:px-10 mb-8'>
-            <h1 className='text-5xl text-[#4166e0] flex justify-center p-5'>
+        <div className='px-5 mt-44 md:mt-0 md:px-10 mb-8'>
+            <h1 className='text-3xl md:text-5xl text-[#4166e0] flex justify-center p-5'>
                 Productos {formattedCategory}
             </h1>
-            <hr className="border border-[#4166e0]" />
+            <hr className="hidden md:block border border-[#4166e0]" />
             {loading ? (
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-20 gap-8 mt-8">
                     {Array.from({ length: 8 }).map((_, index) => (

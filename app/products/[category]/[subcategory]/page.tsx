@@ -57,11 +57,11 @@ export default function SubcategoryPage() {
     }, [category, subcategory]);
 
     return (
-        <div className='px-5 sm:px-10 mb-8'>
-            <h1 className='text-5xl text-[#4166e0] flex justify-center p-5'>
-                Productos {formattedCategory} - {formattedSubcategory}
-            </h1>
-            <hr className="border border-[#4166e0]" />
+        <div className='px-5 mt-44 md:mt-0 md:px-10 mb-8'>
+            <div className='flex flex-row justify-center gap-60 text-3xl md:text-5xl font-bold text-[#4166e0] p-5'>
+                <h1>Productos {formattedCategory} - {formattedSubcategory}</h1>
+            </div>
+            <hr className="hidden md:block border border-[#4166e0]" />
             {loading ? (
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-20 gap-8 mt-8">
                     {Array.from({ length: 8 }).map((_, index) => (
