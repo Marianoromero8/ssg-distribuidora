@@ -20,7 +20,7 @@ export default function Providers() {
     return (
         <div id="brands" className="text-[#4166e0]">
             <motion.div
-                className="flex justify-center mt-8 mb-6 text-5xl"
+                className="flex justify-center md:mt-8 mb-6 text-5xl"
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 2 }}
