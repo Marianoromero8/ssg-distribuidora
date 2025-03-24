@@ -53,7 +53,7 @@ export default function Home() {
                     Descubre nuestra línea de productos exclusivos con la mejor calidad y precio del mercado.
                 </motion.p>
                 <motion.div
-                    className="text-[#4166e0] mt-6 flex flex-col sm:flex-row justify-center sm:justify-start space-y-4 sm:space-y-0 sm:space-x-4"
+                    className="text-[#4166e0] mt-6 flex flex-row md:flex-row justify-center sm:justify-start space-y-0 space-x-4"
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 3 }}
