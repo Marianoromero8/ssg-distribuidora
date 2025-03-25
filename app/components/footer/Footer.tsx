@@ -25,8 +25,8 @@ export default function Footer() {
                     />
                 </div>
                 <div className="flex flex-col gap-6 align-middle">
-                    <h2 className="underline text-2xl">Contacto</h2>
-                    <div className="flex flex-row gap-2">
+                    <div className="flex flex-row items-center gap-4">
+                        <h2 className="underline text-2xl">Contacto</h2>
                         <a href="https://www.facebook.com/DistribuidoraSSG/" target="_blank" rel="noopener noreferrer">
                             <FaFacebook className="text-2xl hover:text-gray-600 transition-colors" />
                         </a>
