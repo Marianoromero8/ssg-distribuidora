@@ -90,7 +90,7 @@ export default function Home() {
                     className="w-full h-full"
                     onSlideChange={handleSlideChange}
                 >
-                    {["tonaditavideo.mp4", "cremaMilkaut.mp4", "conosudvideo.mp4", "baldemilkaut.mp4", "simplotvideo.mp4"].map((video, index) => (
+                    {["videomccain2.mp4", "tonaditavideo.mp4", "simplotvideo.mp4", "cremaMilkaut.mp4", "conosudvideo.mp4", "baldemilkaut.mp4"].map((video, index) => (
                         <SwiperSlide key={index}>
                             <video
                                 ref={(el) => { videoRefs.current[index] = el; }}

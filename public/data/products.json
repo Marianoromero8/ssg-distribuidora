@@ -775,7 +775,7 @@
                 "id": 47,
                 "image": "/products/muzzarella_cilindrica_3k.jpg",
                 "productName": "Muzzarella Cilindrica Barraza",
-                "presentation": "???",
+                "presentation": "3 KG",
                 "category": "refrigerados",
                 "subcategory": "quesos"
             },
@@ -791,7 +791,7 @@
                 "id": 49,
                 "image": "/products/Provoleta.jpg",
                 "productName": "Provoleta Barraza",
-                "presentation": "???",
+                "presentation": "4 KG",
                 "category": "refrigerados",
                 "subcategory": "quesos"
             },
@@ -799,7 +799,7 @@
                 "id": 50,
                 "image": "/products/Queso_Azul.jpg",
                 "productName": "Queso Azul Barraza",
-                "presentation": "???",
+                "presentation": "2,30 KG",
                 "category": "refrigerados",
                 "subcategory": "quesos"
             },
@@ -1032,8 +1032,8 @@
             {
                 "id": 59,
                 "image": "/products/crudo.png",
-                "productName": "Jamon Crudo El Artesano",
-                "presentation": "????",
+                "productName": "Jamon Crudo - El Artesano",
+                "presentation": "3 KG",
                 "category": "refrigerados",
                 "subcategory": "fiambres"
             }
