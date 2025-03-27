@@ -10,7 +10,7 @@
             {
                 "id": 7,
                 "image": "/products/_clasica_5kg_tonadita.png",
-                "productName": "Manteca",
+                "productName": "Manteca - Tonadita",
                 "presentation": "Caja x 5kg",
                 "category": "refrigerados",
                 "subcategory": "lacteos"
@@ -18,7 +18,7 @@
             {
                 "id": 8,
                 "image": "/products/chantilly_tonadita.png",
-                "productName": "Crema Chantilly",
+                "productName": "Crema Chantilly - Tonadita",
                 "presentation": "250 GR",
                 "category": "refrigerados",
                 "subcategory": "lacteos"
@@ -26,7 +26,7 @@
             {
                 "id": 9,
                 "image": "/products/bd_crema_clasica_200_tonadita.png",
-                "productName": "Crema Clasica",
+                "productName": "Crema Clasica - Tonadita",
                 "presentation": "200 GR",
                 "category": "refrigerados",
                 "subcategory": "lacteos"
@@ -34,7 +34,7 @@
             {
                 "id": 10,
                 "image": "/products/dipCheddar_3kg_tonadita.png",
-                "productName": "Dip Cheddar",
+                "productName": "Dip Cheddar - Tonadita",
                 "presentation": "3 KG",
                 "category": "refrigerados",
                 "subcategory": "quesos"
@@ -42,39 +42,39 @@
             {
                 "id": 11,
                 "image": "/products/fetas_10_azul_tonadita.png",
-                "productName": "Fetas Queso Azul",
-                "presentation": "1 x 10",
+                "productName": "Fetas Queso Azul - Tonadita",
+                "presentation": "1 x 10u",
                 "category": "refrigerados",
                 "subcategory": "quesos"
             },
             {
                 "id": 12,
                 "image": "/products/fetas_cheddar_tonadita.png",
-                "productName": "Fetas Queso Cheddar",
-                "presentation": "1 x 10",
+                "productName": "Fetas Queso Cheddar - Tonadita",
+                "presentation": "1 x 10u",
                 "category": "refrigerados",
                 "subcategory": "quesos"
             },
             {
                 "id": 13,
                 "image": "/products/fetas_168_mozzarella_tonadita.png",
-                "productName": "Fetas Queso Mozzarella",
-                "presentation": "1 x 168",
+                "productName": "Fetas Queso Mozzarella - Tonadita",
+                "presentation": "1 x 168u",
                 "category": "refrigerados",
                 "subcategory": "quesos"
             },
             {
                 "id": 14,
                 "image": "/products/fetas_cheddar_168_tonadita.png",
-                "productName": "Fetas Queso Cheddar",
-                "presentation": "1 x 168",
+                "productName": "Fetas Queso Cheddar - Tonadita",
+                "presentation": "1 x 168u",
                 "category": "refrigerados",
                 "subcategory": "quesos"
             },
             {
                 "id": 15,
                 "image": "/products/manteca_clasica_100_tonadita.png",
-                "productName": "Manteca Clasica",
+                "productName": "Manteca Clasica - Tonadita",
                 "presentation": "100 GR",
                 "category": "refrigerados",
                 "subcategory": "lacteos"
@@ -82,7 +82,7 @@
             {
                 "id": 16,
                 "image": "/products/manteca_clasica_200_tonadita.png",
-                "productName": "Manteca Clasica",
+                "productName": "Manteca Clasica - Tonadita",
                 "presentation": "200 GR",
                 "category": "refrigerados",
                 "subcategory": "lacteos"
@@ -108,7 +108,7 @@
             {
                 "id": 3,
                 "image": "/products/cremas-44-porciento-milkaut.webp",
-                "productName": "Crema de Leche 44%",
+                "productName": "Crema de Leche 44% - Milkaut",
                 "presentation": "5 L",
                 "category": "refrigerados",
                 "subcategory": "lacteos"
@@ -116,7 +116,7 @@
             {
                 "id": 4,
                 "image": "/products/crematto_F_milkaut.png",
-                "productName": "Crematto Clasico Milkaut",
+                "productName": "Crematto Clasico - Milkaut",
                 "presentation": "3.5 KG",
                 "category": "refrigerados",
                 "subcategory": "lacteos"
@@ -124,19 +124,23 @@
             {
                 "id": 17,
                 "image": "/products/balde-clasico-milkaut.webp",
-                "productName": "Dulce de Leche - Clasico",
-                "presentation": "10 KG"
+                "productName": "Dulce de Leche Clasico - Milkaut",
+                "presentation": "10 KG",
+                "category": "refrigerados",
+                "subcategory": "lacteos"
             },
             {
                 "id": 18,
                 "image": "/products/balde-repostero_milkaut.webp",
-                "productName": "Dulce de Leche - Repostero",
-                "presentation": "10 KG"
+                "productName": "Dulce de Leche Repostero - Milkaut",
+                "presentation": "10 KG",
+                "category": "refrigerados",
+                "subcategory": "lacteos"
             },
             {
                 "id": 19,
                 "image": "/products/cheddar_F_milkaut.webp",
-                "productName": "Cheddar Milkaut",
+                "productName": "Cheddar - Milkaut",
                 "presentation": "3.5 KG",
                 "category": "refrigerados",
                 "subcategory": "quesos"
@@ -144,7 +148,7 @@
             {
                 "id": 20,
                 "image": "/products/crema_frente_T_milkaut.webp",
-                "productName": "Crematto Clasico Milkaut",
+                "productName": "Crematto Clasico - Milkaut",
                 "presentation": "1.5 KG",
                 "category": "refrigerados",
                 "subcategory": "lacteos"
@@ -152,7 +156,7 @@
             {
                 "id": 21,
                 "image": "/products/crema-39-milkaut.webp",
-                "productName": "Crema 39%",
+                "productName": "Crema 39% - Milkaut",
                 "presentation": "5 L",
                 "category": "refrigerados",
                 "subcategory": "lacteos"
@@ -160,7 +164,7 @@
             {
                 "id": 22,
                 "image": "/products/lechemilkautdescremada.jpeg",
-                "productName": "Leche Descremada",
+                "productName": "Leche Descremada - Milkaut",
                 "presentation": "1 L",
                 "category": "refrigerados",
                 "subcategory": "lacteos"
@@ -168,7 +172,7 @@
             {
                 "id": 23,
                 "image": "/products/lechemilkautentera.jpeg",
-                "productName": "Leche Entera",
+                "productName": "Leche Entera - Milkaut",
                 "presentation": "1 L",
                 "category": "refrigerados",
                 "subcategory": "lacteos"
@@ -176,7 +180,7 @@
             {
                 "id": 24,
                 "image": "/products/manteca_5kg_milkaut.webp",
-                "productName": "Manteca Clasica",
+                "productName": "Manteca Clasica - Milkaut",
                 "presentation": "5 KG",
                 "category": "refrigerados",
                 "subcategory": "lacteos"
@@ -184,8 +188,8 @@
             {
                 "id": 25,
                 "image": "/products/Pack_queso-fetas2_Cheddar_milkaut.webp",
-                "productName": "Fetas Queso Cheddar",
-                "presentation": "1 x 192",
+                "productName": "Fetas Queso Cheddar - Milkaut",
+                "presentation": "1 x 192u",
                 "category": "refrigerados",
                 "subcategory": "quesos"
             }
@@ -600,7 +604,7 @@
             {
                 "id": 26,
                 "image": "/products/cheddar-500cc-benidorm.png",
-                "productName": "Benidorm Cheddar",
+                "productName": "Cheddar - Benidorm",
                 "presentation": "500 ML",
                 "category": "refrigerados",
                 "subcategory": "aderezos"
@@ -608,7 +612,7 @@
             {
                 "id": 27,
                 "image": "/products/ketchup-500cc-benidorm.png",
-                "productName": "Benidorm Ketchup",
+                "productName": "Ketchup - Benidorm",
                 "presentation": "500 ML",
                 "category": "refrigerados",
                 "subcategory": "aderezos"
@@ -616,7 +620,7 @@
             {
                 "id": 28,
                 "image": "/products/mayonesa-500cc-benidorm.png",
-                "productName": "Benidorm Mayonesa",
+                "productName": "Mayonesa - Benidorm",
                 "presentation": "500 ML",
                 "category": "refrigerados",
                 "subcategory": "aderezos"
@@ -624,7 +628,7 @@
             {
                 "id": 29,
                 "image": "/products/mostaza-500cc-benidorm.png",
-                "productName": "Benidorm Mostaza",
+                "productName": "Mostaza - Benidorm",
                 "presentation": "500 ML",
                 "category": "refrigerados",
                 "subcategory": "aderezos"
@@ -632,7 +636,7 @@
             {
                 "id": 30,
                 "image": "/products/mayonesa2900-benidorm.jpg",
-                "productName": "Benidorm Mayonesa",
+                "productName": "Mayonesa - Benidorm",
                 "presentation": "2.9 KG",
                 "category": "refrigerados",
                 "subcategory": "aderezos"
@@ -640,7 +644,7 @@
             {
                 "id": 84,
                 "image": "/products/mayonesa-500cc-benidorm.png",
-                "productName": "Benidorm Mayonesa",
+                "productName": "Mayonesa - Benidorm",
                 "presentation": "250 ML",
                 "category": "refrigerados",
                 "subcategory": "aderezos"
@@ -648,7 +652,7 @@
             {
                 "id": 85,
                 "image": "/products/ketchup-500cc-benidorm.png",
-                "productName": "Benidorm Ketchup",
+                "productName": "Ketchup - Benidorm",
                 "presentation": "250 ML",
                 "category": "refrigerados",
                 "subcategory": "aderezos"
@@ -656,7 +660,7 @@
             {
                 "id": 86,
                 "image": "/products/mostaza-500cc-benidorm.png",
-                "productName": "Benidorm Mostaza",
+                "productName": "Mostaza - Benidorm",
                 "presentation": "250 ML",
                 "category": "refrigerados",
                 "subcategory": "aderezos"
@@ -774,7 +778,7 @@
             {
                 "id": 47,
                 "image": "/products/muzzarella_cilindrica_3k.jpg",
-                "productName": "Muzzarella Cilindrica Barraza",
+                "productName": "Muzzarella Cilindrica - Barraza",
                 "presentation": "3 KG",
                 "category": "refrigerados",
                 "subcategory": "quesos"
@@ -782,15 +786,15 @@
             {
                 "id": 48,
                 "image": "/products/Muzzarella_industrial_10kg.jpg",
-                "productName": "Muzzarella Horma Barraza",
-                "presentation": "???",
+                "productName": "Muzzarella Horma - Barraza",
+                "presentation": "10 KG",
                 "category": "refrigerados",
                 "subcategory": "quesos"
             },
             {
                 "id": 49,
                 "image": "/products/Provoleta.jpg",
-                "productName": "Provoleta Barraza",
+                "productName": "Provoleta - Barraza",
                 "presentation": "4 KG",
                 "category": "refrigerados",
                 "subcategory": "quesos"
@@ -798,7 +802,7 @@
             {
                 "id": 50,
                 "image": "/products/Queso_Azul.jpg",
-                "productName": "Queso Azul Barraza",
+                "productName": "Queso Azul - Barraza",
                 "presentation": "2,30 KG",
                 "category": "refrigerados",
                 "subcategory": "quesos"
@@ -806,16 +810,16 @@
             {
                 "id": 51,
                 "image": "/products/Queso_Cremoso_Horma.jpg",
-                "productName": "Queso Cremoso Barraza",
-                "presentation": "???",
+                "productName": "Queso Cremoso - Barraza",
+                "presentation": "4,20 KG",
                 "category": "refrigerados",
                 "subcategory": "quesos"
             },
             {
                 "id": 52,
                 "image": "/products/tybo.jpg",
-                "productName": "Queso Tybo Barraza",
-                "presentation": "???",
+                "productName": "Queso Tybo - Barraza",
+                "presentation": "4 KG",
                 "category": "refrigerados",
                 "subcategory": "quesos"
             }
@@ -876,7 +880,7 @@
             {
                 "id": 43,
                 "image": "/products/simplot tradicionales.jpg",
-                "productName": "Tradicional Simplot",
+                "productName": "Tradicional - Simplot",
                 "presentation": "2.5 KG",
                 "category": "congelados",
                 "subcategory": "papas fritas"
@@ -884,7 +888,7 @@
             {
                 "id": 44,
                 "image": "/products/simplot extracrunch fino.jpg",
-                "productName": "Extra Crunch Corte Fino Simplot",
+                "productName": "Extra Crunch Corte Fino - Simplot",
                 "presentation": "2.5 KG",
                 "category": "congelados",
                 "subcategory": "papas fritas"
@@ -892,7 +896,7 @@
             {
                 "id": 45,
                 "image": "/products/simplot extracrunch tradicional.jpg",
-                "productName": "Extra Crunch Simplot",
+                "productName": "Extra Crunch - Simplot",
                 "presentation": "2.5 KG",
                 "category": "congelados",
                 "subcategory": "papas fritas"
@@ -936,7 +940,7 @@
             {
                 "id": 46,
                 "image": "/products/baston-tradicional-2.5-kg-lamb-weston.webp",
-                "productName": "Tradicionales Lambweston",
+                "productName": "Tradicionales - Lambweston",
                 "presentation": "2.5 KG",
                 "category": "congelados",
                 "subcategory": "papas fritas"
@@ -944,7 +948,7 @@
             {
                 "id": 58,
                 "image": "/products/baston-fino-2.5kg-lamb-weston.webp",
-                "productName": "Corte Fino Lambweston",
+                "productName": "Corte Fino - Lambweston",
                 "presentation": "2.5 KG",
                 "category": "congelados",
                 "subcategory": "papas fritas"
@@ -962,24 +966,24 @@
             {
                 "id": 55,
                 "image": "/products/Fiambre-cocido-de-paleta-cuadrado.jpg",
-                "productName": "Cocido de Paleta Tapalque",
-                "presentation": "????",
+                "productName": "Cocido de Paleta - Tapalque",
+                "presentation": "5,33 KG aprox",
                 "category": "refrigerados",
                 "subcategory": "fiambres"
             },
             {
                 "id": 56,
                 "image": "/products/jamoncocido.jpg",
-                "productName": "Jamon Cocido Tapalque",
-                "presentation": "????",
+                "productName": "Jamon Cocido - Tapalque",
+                "presentation": "5,28 KG aprox",
                 "category": "refrigerados",
                 "subcategory": "fiambres"
             },
             {
                 "id": 57,
                 "image": "/products/Panceta-Ahumada-Con-Cuero.jpg",
-                "productName": "Panceta Ahumada Tapalque",
-                "presentation": "????",
+                "productName": "Panceta Ahumada - Tapalque",
+                "presentation": "1,8 KG aprox",
                 "category": "refrigerados",
                 "subcategory": "fiambres"
             }
@@ -996,7 +1000,7 @@
             {
                 "id": 53,
                 "image": "/products/RAPIPAP-BASTON-x2500.webp",
-                "productName": "Tradicionales Rapipap",
+                "productName": "Tradicionales - Rapipap",
                 "presentation": "2.5 KG",
                 "category": "congelados",
                 "subcategory": "papas fritas"
@@ -1014,8 +1018,8 @@
             {
                 "id": 54,
                 "image": "/products/HORMA-SARDO-400x400.png",
-                "productName": "Sardo Punta del Agua",
-                "presentation": "????",
+                "productName": "Sardo - Punta del Agua",
+                "presentation": "3.5 KG aprox",
                 "category": "refrigerados",
                 "subcategory": "quesos"
             }
@@ -1050,7 +1054,7 @@
             {
                 "id": 60,
                 "image": "/products/cantimpalo.png",
-                "productName": "Cantimpalo Lario",
+                "productName": "Cantimpalo - Lario",
                 "presentation": "????",
                 "category": "refrigerados",
                 "subcategory": "fiambres"
