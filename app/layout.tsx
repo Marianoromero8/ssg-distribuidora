@@ -33,6 +33,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="Distribuidora-SSG_Logo-Blanco_2024.svg" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${ubuntu.variable} antialiased bg-[#e8decb]`}
       >
