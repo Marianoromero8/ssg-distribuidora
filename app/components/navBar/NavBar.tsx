@@ -253,19 +253,25 @@ export default function NavBar() {
                     <DropdownMenuContent className="text-[#ffff] bg-[#4166e0]">
                         <Link href="https://www.instagram.com/reina.burguesa/" target="_blank">
                             <DropdownMenuItem className="cursor-pointer">
-                                Reina
+                                Reina Burguesa
                             </DropdownMenuItem>
                         </Link>
                         <DropdownMenuSeparator />
                         <Link href="https://www.instagram.com/madd.burgers/" target="_blank">
                             <DropdownMenuItem className="cursor-pointer">
-                                Madd
+                                Madd Burguers
                             </DropdownMenuItem>
                         </Link>
                         <DropdownMenuSeparator />
                         <Link href="https://www.instagram.com/salvaje.burger/" target="_blank">
                             <DropdownMenuItem className="cursor-pointer">
-                                Fogón Salvaje
+                                Salvaje
+                            </DropdownMenuItem>
+                        </Link>
+                        <DropdownMenuSeparator />
+                        <Link href="https://www.instagram.com/tonnysburgerbb/" target="_blank">
+                            <DropdownMenuItem className="cursor-pointer">
+                                {"Tonny's Burguer"}
                             </DropdownMenuItem>
                         </Link>
                     </DropdownMenuContent>
@@ -428,19 +434,25 @@ export default function NavBar() {
                         <DropdownMenuContent className="text-[#ffff] bg-[#4166e0]">
                             <Link href="https://www.instagram.com/reina.burguesa/" target="_blank">
                                 <DropdownMenuItem className="cursor-pointer">
-                                    Reina
+                                    Reina Burguesa
                                 </DropdownMenuItem>
                             </Link>
                             <DropdownMenuSeparator />
                             <Link href="https://www.instagram.com/madd.burgers/" target="_blank">
                                 <DropdownMenuItem className="cursor-pointer">
-                                    Madd
+                                    Madd Burguers
                                 </DropdownMenuItem>
                             </Link>
                             <DropdownMenuSeparator />
                             <Link href="https://www.instagram.com/salvaje.burger/" target="_blank">
                                 <DropdownMenuItem className="cursor-pointer">
-                                    Fogón Salvaje
+                                    Salvaje
+                                </DropdownMenuItem>
+                            </Link>
+                            <DropdownMenuSeparator />
+                            <Link href="https://www.instagram.com/tonnysburgerbb/" target="_blank">
+                                <DropdownMenuItem className="cursor-pointer">
+                                    {"Tonny's Burguer"}
                                 </DropdownMenuItem>
                             </Link>
                         </DropdownMenuContent>
