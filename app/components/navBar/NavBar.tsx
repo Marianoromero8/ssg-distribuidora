@@ -271,7 +271,7 @@ export default function NavBar() {
                         <DropdownMenuSeparator />
                         <Link href="https://www.instagram.com/tonnysburgerbb/" target="_blank">
                             <DropdownMenuItem className="cursor-pointer">
-                                Tonny´s Burguer
+                                {"Tonny's Burguer"}
                             </DropdownMenuItem>
                         </Link>
                     </DropdownMenuContent>
@@ -452,7 +452,7 @@ export default function NavBar() {
                             <DropdownMenuSeparator />
                             <Link href="https://www.instagram.com/tonnysburgerbb/" target="_blank">
                                 <DropdownMenuItem className="cursor-pointer">
-                                    Tonny's Burguer
+                                    {"Tonny's Burguer"}
                                 </DropdownMenuItem>
                             </Link>
                         </DropdownMenuContent>
