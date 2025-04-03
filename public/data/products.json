@@ -94,6 +94,14 @@
                 "presentation": "3 KG",
                 "category": "refrigerados",
                 "subcategory": "lacteos"
+            },
+            {
+                "id": 123,
+                "image": "/products/provoloneTonaditax168.png",
+                "productName": "Fetas Queso Provolone - Tonadita",
+                "presentation": "1 x 168u",
+                "category": "refrigerados",
+                "subcategory": "quesos"
             }
         ]
     },
@@ -192,6 +200,22 @@
                 "presentation": "1 x 192u",
                 "category": "refrigerados",
                 "subcategory": "quesos"
+            },
+            {
+                "id": 121,
+                "image": "/products/spicycheddarMilkaut.png",
+                "productName": "Fetas Queso Cheddar Picante - Milkaut",
+                "presentation": "1 x 192u",
+                "category": "refrigerados",
+                "subcategory": "quesos"
+            },
+            {
+                "id": 122,
+                "image": "/products/smokedcheddarMilkaut.png",
+                "productName": "Fetas Queso Cheddar Ahumado - Milkaut",
+                "presentation": "1 x 192u",
+                "category": "refrigerados",
+                "subcategory": "quesos"
             }
         ]
     },
@@ -272,7 +296,7 @@
             {
                 "id": 67,
                 "image": "/products/Choclo-IQF-Conosud-1-kg.webp",
-                "productName": "Choco en Grano Congelado - ConoSud",
+                "productName": "Choclo en Grano Congelado - ConoSud",
                 "presentation": "1 KG",
                 "category": "congelados",
                 "subcategory": "verduras"
